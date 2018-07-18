@@ -4,9 +4,9 @@
 Here you can find Architectural Views related to Research Data
 Management in a university setting.
 
-The views are created are the result of an ongoing activity to
-establish a common ground for research data management and the
-enterprise architecture for implementing it at Danish Universities.
+The views are the result of an ongoing activity to establish a common
+ground for research data management and the enterprise architecture
+for implementing it at Danish Universities.
 
 # Attribution
 
@@ -19,8 +19,8 @@ This work is performed by a consortium of Danish Universities:
 * [University of Copenhagen](https://www.ku.dk/english/)
 
 The activity is funded by
-[DeiC](https://www.deic.dk/en DeiC - Danish e-Infrastructure Cooperation) and
-[DEFF](https://www.deff.dk/english/ Denmarks Electronic Research Library)
+[Danish e-Infrastructure Cooperation (DeiC)](https://www.deic.dk/en ) and
+[Denmarks Electronic Research Library (DEFF)](https://www.deff.dk/english/)
 
 # Licence 
 
