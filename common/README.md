@@ -1,4 +1,4 @@
-# Data Management by Design
+# Data Management by Design - Common Architecture
 
 Here you can find Architectural Views related to Research Data
 Management in a university setting.
