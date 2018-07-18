@@ -20,7 +20,7 @@ version](https://rawgit.com/Data-Management-by-Design/DMbD/master/ws1/html/index
 
 Single file reports are avilable in
 [PDF](exported/WS1presentation.pdf) or
-[HTML](https://rawgit.com/Data-Management-by-Design/DMbD/blob/master/ws1/exported/WS1presentation.html) format.
+[HTML](https://rawgit.com/Data-Management-by-Design/DMbD/master/ws1/exported/WS1presentation.html) format.
 
 # Attribution
 
