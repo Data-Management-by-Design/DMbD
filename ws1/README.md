@@ -16,7 +16,7 @@ The modelling examples used in the presentation are in
 opened using [Archi](https://www.archimatetool.com/).
 
 Aternatively you can view it in your browser as an exported [HTML
-version](https://rawgit.com/Data-Management-by-Design/DMbD/master/ws1/html/).
+version](https://raw.githack.com/Data-Management-by-Design/DMbD/tree/master/ws1/html).
 
 Single file reports are avilable in
 [PDF](exported/WS1presentation.pdf) or
