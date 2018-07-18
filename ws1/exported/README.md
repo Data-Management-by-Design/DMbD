@@ -3,7 +3,7 @@
 This directory contains reports generated from [WS1presentation.archimate](../WS1presentation.archimate) which is can be
 opened using [Archi](https://www.archimatetool.com/).
 
-Use this link to browse the [HTML version of the report](https://rawgit.com/Data-Management-by-Design/DMbD/master/ws1/exported/WS1presentation.html).
+Use this link to browse the [HTML version of the report](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/c0514bbb/ws1/exported/WS1presentation.html).
 
 # Licence 
 

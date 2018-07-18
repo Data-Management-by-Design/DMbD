@@ -16,11 +16,11 @@ The modelling examples used in the presentation are in
 opened using [Archi](https://www.archimatetool.com/).
 
 Aternatively you can view it in your browser as an exported [HTML
-version](https://raw.githack.com/Data-Management-by-Design/DMbD/master/ws1/html/index.html).
+version](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7a35a312/ws1/html/index.html).
 
 Single file reports are avilable in
 [PDF](exported/WS1presentation.pdf) or
-[HTML](https://rawgit.com/Data-Management-by-Design/DMbD/master/ws1/exported/WS1presentation.html) format.
+[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/c0514bbb/ws1/exported/WS1presentation.html) format.
 
 # Attribution
 
