@@ -3,9 +3,16 @@
 Here you can find Architectural Views related to Research Data
 Management in a university setting.
 
-The views are the result of an ongoing activity to establish a common
-ground for research data management and the enterprise architecture
-for implementing it at Danish Universities.
+---
+
+An initial version of the common enterprise architecture will be made
+available around November. Come back later!
+
+---
+
+The achitectural views presented are the result of an ongoing activity
+to establish a common ground for research data management and the
+enterprise architecture for implementing it at Danish Universities.
 
 # Attribution
 
