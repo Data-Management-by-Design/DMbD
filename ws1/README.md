@@ -1,26 +1,45 @@
-# Data Management by Design - Workshop 1
+# Data Management by Design - Workshop 1 - Archiving
 
 Here you can find the materials related to the first workshop of the
 'Data Management by Design' activity.
 
-The views are the result of an ongoing activity to establish a common
-ground for research data management and the enterprise architecture
-for implementing it at Danish Universities.
+The goal of the workshop was to identify important requirements to the
+implementation of a research data archive in a university setting from
+the various stakeholders along with their primary motives.
+
+## Method
+
+A subset of the ArchiMate language is used to model the motivations
+and goals of stakeholders having requirements to the handling of
+research data at universities.
+
+![Example of the simplified ArchiMate motivation modelling used in the workshop](SimpleMotivationExample.svg)
+
+## Results
+
+Modelling is still ongoing. This repository is used to coordinate the
+effort in an open process. We invite anybody, with insight, to
+contribute to the result.
+
+The current combined model is in the file [WS1result.archimate](WS1result.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
+
+Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/html/WS1result/index.html).
+
+Printable report style versions versions are avilable in
+[PDF](exported/WS1presentation.pdf) or
+[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/exported/WS1result.html) format.
 
 ## Presentation
 
-## Archimate Modeling
-
-The modelling examples used in the presentation are in
-[WS1presentation.archimate](WS1presentation.archimate) which is can be
+The modelling examples used in the presentation at the workshop are in
+[WS1presentation.archimate](WS1presentation.archimate) which must be
 opened using [Archi](https://www.archimatetool.com/).
 
-Aternatively you can view it in your browser as an exported [HTML
-version](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7a35a312/ws1/html/index.html).
+Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/html/WS1presentation/index.html).
 
-Single file reports are avilable in
+Printable report style versions are avilable in
 [PDF](exported/WS1presentation.pdf) or
-[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/c0514bbb/ws1/exported/WS1presentation.html) format.
+[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/exported/WS1presentation.html) format.
 
 # Attribution
 
