@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="WS1presentation" id="06174450-9767-44f5-8c99-caed51496e37" version="4.0.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="WS1: Presentation" id="06174450-9767-44f5-8c99-caed51496e37" version="4.0.0">
   <folder name="Strategy" id="7bdb79ae-8514-41b1-842e-57f6f757e8fe" type="strategy">
     <element xsi:type="archimate:Capability" name="Data Management" id="0bfa7586-09e2-4e50-af3d-8118e2bd537f">
       <documentation>Develop and implement a data management strategy for data collection, storage, preservation, and&#xD;
@@ -1928,14 +1928,15 @@ The workshop was held at AAU  </documentation>
       </folder>
     </folder>
   </folder>
-  <purpose>Views and elements prepaired for the first workshop in the &quot;Data Management by Design&quot; activity under the Danish national Data Management forum established by DeiC and DEFF.
+  <purpose>Views and elements prepared for the first workshop in the &quot;Data Management by Design&quot; activity under the Danish national Data Management forum established by DeiC and DEFF. 
 
-The modelling and this file was produced using the Archi | Open Source ArchiMate Modelling Tool: https://www.archimatetool.com/
 
 All material made by the activity 'Data Management by Design' is made available under a Creative Commons licence.
 
 CC-BY 4.0 Danish DM Forum 'Data Management by Design' activity
 
-These views and examples where made by Bo Bai  - bai@its.aau.dk
+These views and examples where made by Bo Bai:  http://personprofil.aau.dk/104023?lang=en
+
+The modelling and this file was produced using the Archi | Open Source ArchiMate Modelling Tool: https://www.archimatetool.com/
 </purpose>
 </archimate:model>

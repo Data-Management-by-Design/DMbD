@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="WS1: Archive Motivation" id="0859fcb4-c1bf-4887-abdc-3e7dff41eb5e" version="4.0.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="WS1: Result" id="0859fcb4-c1bf-4887-abdc-3e7dff41eb5e" version="4.0.0">
   <folder name="Strategy" id="dddc308e-1e65-41b3-b847-260b5214d468" type="strategy">
     <element xsi:type="archimate:Capability" name="Data Management" id="f9c3fdb1-e8d6-4091-97b1-f59146d990cb">
       <documentation>Develop and implement a data management strategy for data collection, storage, preservation, and&#xD;
