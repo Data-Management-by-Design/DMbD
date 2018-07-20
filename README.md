@@ -7,6 +7,13 @@ The views are the result of an ongoing activity to establish a common
 ground for research data management and the enterprise architecture
 for implementing it at Danish Universities.
 
+# Current progress
+
+The [first workshop](ws1) was held in Aalborg in June. Results from
+the workshop is the foundation for the ongoing effort to model the
+motivations and requirements to research data archiving of the various
+stakeholders in a university setting.
+
 # Attribution
 
 This work is performed by a consortium of Danish Universities:
@@ -23,7 +30,7 @@ The activity is funded by
 
 # Licence 
 
-All material made by the activity 'Data Management by Design' is made available under a Creative Commons licence.
+All material made by the activity [Data Management by Design](https://github.com/Data-Management-by-Design/DMbD) is made available under a Creative Commons licence.
 
 CC-BY 4.0 Danish DM Forum 'Data Management by Design' activity
 

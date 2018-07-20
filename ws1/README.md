@@ -31,6 +31,8 @@ Printable report style versions versions are avilable in
 
 ## Presentation
 
+The presenentation from the workshop is available as a [PDF](slides.pdf).
+
 The modelling examples used in the presentation at the workshop are in
 [WS1presentation.archimate](WS1presentation.archimate) which must be
 opened using [Archi](https://www.archimatetool.com/).
@@ -41,23 +43,9 @@ Printable report style versions are avilable in
 [PDF](exported/WS1presentation.pdf) or
 [HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/exported/WS1presentation.html) format.
 
-# Attribution
-
-This work is performed by a consortium of Danish Universities:
-
-* [Aalborg University](https://www.en.aau.dk/)
-* [The University of Southern Denmark](https://www.sdu.dk/en/)
-* [Technical University of Denmark](https://www.dtu.dk/english)
-* [Copenhagen Business School](https://www.cbs.dk/en)
-* [University of Copenhagen](https://www.ku.dk/english/)
-
-The activity is funded by
-[Danish e-Infrastructure Cooperation (DeiC)](https://www.deic.dk/en ) and
-[Denmarks Electronic Research Library (DEFF)](https://www.deff.dk/english/)
-
 # Licence 
 
-All material made by the activity 'Data Management by Design' is made available under a Creative Commons licence.
+All material made by the activity [Data Management by Design](https://github.com/Data-Management-by-Design/DMbD) is made available under a Creative Commons licence.
 
 CC-BY 4.0 Danish DM Forum 'Data Management by Design' activity
 
