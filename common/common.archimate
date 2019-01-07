@@ -164,7 +164,9 @@ This can be important to fulfill interneak and external obligations.&#xD;
       <documentation>The right and ability to use research data in further studies</documentation>
     </element>
     <element xsi:type="archimate:Driver" name="Risk management" id="443542b2-a22c-47d2-b1da-66551af976c2">
-      <documentation>The ability to asses and manage risk in an organization</documentation>
+      <documentation>The ability to asses and manage risk in an organization.
+
+This covers all kinds of risk</documentation>
     </element>
     <element xsi:type="archimate:Driver" name="Satisfied customers" id="23f715be-304c-4e5f-a436-0c16d9088cf0">
       <documentation>The ability to meet or surpass the expectations of the users of a service</documentation>
@@ -587,6 +589,12 @@ Examples: Reviewer, Editor</documentation>
     <element xsi:type="archimate:Requirement" name="Reuse data" id="d83d8739-20b1-4f85-8aa5-cf66e1d0be6f"/>
     <element xsi:type="archimate:Requirement" name="Reuse data workflows" id="6cc7194d-55be-4f97-a7a4-2734c42738c3"/>
     <element xsi:type="archimate:Requirement" name="Reuseability" id="ebd42a2d-e336-47a0-9198-1236dc9af7fe"/>
+    <element xsi:type="archimate:Driver" name="Protect data according to needs" id="6342ba25-f73a-4030-852e-681462c7dd26">
+      <documentation>Data should be protected in accordance with its needs.
+
+Usually this is implemented trough a policy for data security classification and associated rules for how data should be handled depending on its classification. 
+</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="aace22dd-8ad4-43fe-bcb8-69be9befc324" type="implementation_migration"/>
   <folder name="Other" id="3ef9b990-9301-458e-aeae-ea1e58370cbf" type="other">
@@ -874,6 +882,9 @@ Examples: Reviewer, Editor</documentation>
     <element xsi:type="archimate:CompositionRelationship" id="34127c56-0190-4aaa-b4b4-8de671890f85" source="79d4882c-e2fc-4438-81b7-2b28ca3eaaeb" target="9efe5a6e-223c-4cd7-970d-6369fecf8c29"/>
     <element xsi:type="archimate:CompositionRelationship" id="61e9df1e-812a-464f-8791-f622175b63de" source="79d4882c-e2fc-4438-81b7-2b28ca3eaaeb" target="14c0a048-d9ae-43df-bea6-3b2afb383c04"/>
     <element xsi:type="archimate:CompositionRelationship" id="a88d7263-9f8d-43a7-b1e6-671259f9cebe" source="977b9b57-4f5d-4bda-8803-f54d2634f631" target="a6543963-4c59-4a14-941d-d85204e62ed8"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9a326e5b-8d1a-4421-8e06-840dd9878588" source="637f957a-a256-4568-bd7d-8868b096794d" target="6342ba25-f73a-4030-852e-681462c7dd26"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a20a06e9-3869-4414-aa9d-547371aac9e9" source="637f957a-a256-4568-bd7d-8868b096794d" target="443542b2-a22c-47d2-b1da-66551af976c2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="6b4a9108-8b45-47fa-858f-7fc8b6dfe810" source="443542b2-a22c-47d2-b1da-66551af976c2" target="6342ba25-f73a-4030-852e-681462c7dd26"/>
   </folder>
   <folder name="Views" id="646783f1-c909-4e69-80d9-75869bfb711f" type="diagrams">
     <folder name="Initial findings" id="4081fa7f-46ae-4656-8047-08aa187cf109">
@@ -2009,6 +2020,22 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
           <child xsi:type="archimate:DiagramObject" id="9d8733f3-284b-4f44-b432-dfb81f04b143" targetConnections="14012586-b9d3-4512-8437-d3e1ed44f4b0" archimateElement="eaf774b6-ffad-40b8-bf12-7df040366194">
             <bounds x="12" y="288" width="120" height="55"/>
           </child>
+        </child>
+      </element>
+    </folder>
+    <folder name="CommonGround" id="dd9ea504-e639-4d39-a712-6d67a9191c33">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="CISO" id="d794984b-0353-4dd0-adf2-f36fa544106c">
+        <child xsi:type="archimate:DiagramObject" id="1e3005ad-8c3e-46c0-a4a1-6381650c5318" archimateElement="637f957a-a256-4568-bd7d-8868b096794d">
+          <bounds x="12" y="12" width="133" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7de969fb-c7e8-4716-8a98-a9b62d1038cc" source="1e3005ad-8c3e-46c0-a4a1-6381650c5318" target="bc81ce45-d420-4f0d-9472-f8b85ada56b1" archimateRelationship="9a326e5b-8d1a-4421-8e06-840dd9878588"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e4e5ac00-96f3-424f-8e7c-2f353f8f45a6" source="1e3005ad-8c3e-46c0-a4a1-6381650c5318" target="baefaf55-adb1-4a24-ac30-c77781b9135d" archimateRelationship="a20a06e9-3869-4414-aa9d-547371aac9e9"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="bc81ce45-d420-4f0d-9472-f8b85ada56b1" targetConnections="7de969fb-c7e8-4716-8a98-a9b62d1038cc 7f2d5c8a-3f09-4f9f-b5f5-ba68fccf4704" archimateElement="6342ba25-f73a-4030-852e-681462c7dd26">
+          <bounds x="12" y="108" width="133" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="baefaf55-adb1-4a24-ac30-c77781b9135d" targetConnections="e4e5ac00-96f3-424f-8e7c-2f353f8f45a6" archimateElement="443542b2-a22c-47d2-b1da-66551af976c2">
+          <bounds x="216" y="108" width="133" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7f2d5c8a-3f09-4f9f-b5f5-ba68fccf4704" source="baefaf55-adb1-4a24-ac30-c77781b9135d" target="bc81ce45-d420-4f0d-9472-f8b85ada56b1" archimateRelationship="6b4a9108-8b45-47fa-858f-7fc8b6dfe810"/>
         </child>
       </element>
     </folder>
