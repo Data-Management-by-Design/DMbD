@@ -17,11 +17,7 @@ research data at universities.
 
 ## Results
 
-Modelling is still ongoing. This repository is used to coordinate the
-effort in an open process. We invite anybody, with insight, to
-contribute to the result.
-
-The current combined model is in the file [WS1result.archimate](WS1result.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
+The results from the workshop were made into the preliminary model in the file [WS1result.archimate](WS1result.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
 
 Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/html/WS1result/index.html).
 
@@ -29,9 +25,11 @@ Printable report style versions versions are avilable in
 [PDF](exported/WS1presentation.pdf) or
 [HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/ws1/exported/WS1result.html) format.
 
+The combined results from all workshops have been collected into a single model in the [common directory](../common). 
+
 ## Presentation
 
-The presenentation from the workshop is available as a [PDF](slides.pdf).
+The presenentation from the workshop is available as a [PDF](ws1-slides.pdf).
 
 The modelling examples used in the presentation at the workshop are in
 [WS1presentation.archimate](WS1presentation.archimate) which must be
