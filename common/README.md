@@ -19,19 +19,16 @@ The common ground models the motivation of stakeholders inside and
 outside the university that have an interrest in research data
 management.
 
-  model of motivational factorof the mot
-The mod	  el	
-# Attribution
-
-This work is performed by a consortium of Danish Universities:
-
-The preliminary model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
+The preliminary comon ground model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
 
 Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/html/index.html).
-
 Printable report style versions versions are avilable in
 [PDF](exported/common.pdf) or
 [HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format.
+
+# Attribution
+
+This work is performed by a consortium of Danish Universities:
 
 * [Aalborg University](https://www.en.aau.dk/)
 * [The University of Southern Denmark](https://www.sdu.dk/en/)
