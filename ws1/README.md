@@ -29,7 +29,7 @@ The combined results from all workshops have been collected into a single model 
 
 ## Presentation
 
-The presenentation from the workshop is available as a [PDF](slides.pdf).
+The presenentation from the workshop is available as a [PDF](ws1-slides.pdf).
 
 The modelling examples used in the presentation at the workshop are in
 [WS1presentation.archimate](WS1presentation.archimate) which must be

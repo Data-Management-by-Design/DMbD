@@ -3,20 +3,36 @@
 Here you can find Architectural Views related to Research Data
 Management in a university setting.
 
----
-
-An initial version of the common enterprise architecture will be made
-available around November. Come back later!
-
----
-
 The achitectural views presented are the result of an ongoing activity
 to establish a common ground for research data management and the
 enterprise architecture for implementing it at Danish Universities.
 
+---
+
+NOTICE: The current version is a preliminary snapshot that is being expanded and refined.
+
+---
+
+## Common ground
+
+The common ground models the motivation of stakeholders inside and
+outside the university that have an interrest in research data
+management.
+
+  model of motivational factorof the mot
+The mod	  el	
 # Attribution
 
 This work is performed by a consortium of Danish Universities:
+
+The preliminary model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimat\
+etool.com/).
+
+Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/html/index.html).
+
+Printable report style versions versions are avilable in
+[PDF](exported/common.pdf) or
+[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format.
 
 * [Aalborg University](https://www.en.aau.dk/)
 * [The University of Southern Denmark](https://www.sdu.dk/en/)
