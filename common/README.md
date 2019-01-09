@@ -25,8 +25,7 @@ The mod	  el
 
 This work is performed by a consortium of Danish Universities:
 
-The preliminary model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimat\
-etool.com/).
+The preliminary model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
 
 Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/html/index.html).
 

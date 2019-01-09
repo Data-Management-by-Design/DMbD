@@ -8,17 +8,17 @@ The views are the result of an ongoing activity to establish a common
 ground for research data management and the enterprise architecture
 for implementing it at Danish Universities.
 
---
+---
 
 NOTICE: These are still early drafts and are undergoing refinement.
 
---
+---
 
 * [Aalborg University](AAU)
 * [The University of Southern Denmark](SDU)
 * [Technical University of Denmark](DTU)
 * [Copenhagen Business School](CBS)
-* [University of Copenhagen](KU
+* [University of Copenhagen](KU)
 
 # Attribution
 
