@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="DMbD" id="bf3cf619-5b1b-43bd-b5e3-98a4dd678ad1" version="4.0.1">
   <folder name="Strategy" id="01cf7606-61d0-4651-ba38-c2847e55a86f" type="strategy"/>
-  <folder name="Business" id="1c4a71df-d8b3-467f-a4dc-df4b6c57312c" type="business"/>
+  <folder name="Business" id="1c4a71df-d8b3-467f-a4dc-df4b6c57312c" type="business">
+    <element xsi:type="archimate:BusinessObject" name="Data Classification Policy" id="25edd2f4-de29-41de-8064-523dbce1975c"/>
+    <element xsi:type="archimate:BusinessObject" name="Data Retension Policy" id="458ae996-78f4-47fc-8abb-9a9409b0e88c"/>
+    <element xsi:type="archimate:BusinessObject" name="Data Protection Policy" id="c92433bb-cdeb-434a-94f8-7ef0fa271bf5"/>
+    <element xsi:type="archimate:BusinessObject" name="Privacy Policy" id="eb4a36f5-e0d3-403c-aecf-e28759b2a983"/>
+  </folder>
   <folder name="Application" id="0dad1e2f-d845-4235-a4e8-26f8de6124ea" type="application"/>
   <folder name="Technology &amp; Physical" id="fc2884bb-f781-4049-8ff7-c99c70101f92" type="technology"/>
   <folder name="Motivation" id="5ad3849d-879b-4ad6-a1b8-2592b810747d" type="motivation">
@@ -559,7 +564,9 @@ Examples: Reviewer, Editor</documentation>
     <element xsi:type="archimate:Requirement" name="Legal compliance" id="e70a45ba-adfd-492e-8efa-ce7dad2bfdbc"/>
     <element xsi:type="archimate:Requirement" name="Local policy compliance" id="62943a1d-58f1-46f6-bf12-d7239067111e"/>
     <element xsi:type="archimate:Requirement" name="Logging ability" id="d755b201-dc39-40e5-af29-ef27314a30fb"/>
-    <element xsi:type="archimate:Requirement" name="Manage access according to policy" id="e605ae57-3670-45f2-b71e-70ec352cf6dd"/>
+    <element xsi:type="archimate:Requirement" name="Manage access according to policy" id="e605ae57-3670-45f2-b71e-70ec352cf6dd">
+      <documentation>The IT infrastructure must implement management of access control in accordance with the data protection policy</documentation>
+    </element>
     <element xsi:type="archimate:Requirement" name="Monitoring ability" id="cc2dbeeb-de72-4615-b473-f4d20cd4e8de"/>
     <element xsi:type="archimate:Requirement" name="Monitoring and alarming (success, error)" id="1b48dd39-1ded-4587-aeac-ffed95056107"/>
     <element xsi:type="archimate:Requirement" name="No known security vulnerabilities" id="51b2c86f-a80e-44b3-acf2-9323e846203f"/>
@@ -607,7 +614,9 @@ This is implemented trough a policy for data security classification and associa
     <element xsi:type="archimate:Goal" name="Data classified according to policy" id="540823f8-6640-4b86-a065-83964edb48e1">
       <documentation>Data is classified according to the organisations policy.</documentation>
     </element>
-    <element xsi:type="archimate:Goal" name="Data is protected according to classification" id="6e095c8c-5926-49bd-989b-ad08f1220d93"/>
+    <element xsi:type="archimate:Goal" name="Data is protected in accordance with its classification" id="6e095c8c-5926-49bd-989b-ad08f1220d93">
+      <documentation>Data must be classified and protected </documentation>
+    </element>
     <element xsi:type="archimate:Driver" name="Data Privacy Laws" id="b3935e77-a561-4cfd-985f-91c667108c2a">
       <documentation>Data privacy laws regulate the handling of personal data
 
@@ -662,6 +671,12 @@ Internal auditing is an independent, objective assurance and consulting activity
 This enables the implemantation of automated policy checks. </documentation>
     </element>
     <element xsi:type="archimate:Goal" name="Auditing of data protection" id="99cca50a-89f3-43fe-a4b4-a80ba9d1bb34"/>
+    <element xsi:type="archimate:Driver" name="Data Protection Policy" id="8b3bfe70-95e0-46cc-a00f-b154537d0553"/>
+    <element xsi:type="archimate:Driver" name="Data Classification Policy" id="b441abd7-8655-4695-9fbd-a3a302aaf12f">
+      <documentation>Policy for classification of data acoording </documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Data Retension Policy" id="8c73aff8-e5b1-48df-877b-773c48329dcc"/>
+    <element xsi:type="archimate:Driver" name="Privacy Policy" id="f3eb2a3b-2669-466a-bd8b-b8977dd9f5e5"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="aace22dd-8ad4-43fe-bcb8-69be9befc324" type="implementation_migration"/>
   <folder name="Other" id="3ef9b990-9301-458e-aeae-ea1e58370cbf" type="other">
@@ -989,6 +1004,9 @@ This enables the implemantation of automated policy checks. </documentation>
     <element xsi:type="archimate:AssociationRelationship" id="51d0634b-9ec0-4d1c-bb8f-ac7992ae792f" source="2f8fc9f0-1d23-4416-963d-625fde0bf5ff" target="6167c27b-4b04-482f-9a2e-af0455c56e74"/>
     <element xsi:type="archimate:AssociationRelationship" id="53efe7d6-0cb9-4704-9f26-e8fabf1c55eb" source="df583155-262b-4a04-9a1d-bc6e54e5ac8c" target="99cca50a-89f3-43fe-a4b4-a80ba9d1bb34"/>
     <element xsi:type="archimate:AssociationRelationship" id="2263c7f8-daec-49cb-b4aa-6096713ee513" source="99cca50a-89f3-43fe-a4b4-a80ba9d1bb34" target="e1fced1d-08dd-4038-b2a0-47122a5c3554"/>
+    <element xsi:type="archimate:CompositionRelationship" id="06d8b89f-63f7-4de1-8aac-e40cfa904c64" source="c92433bb-cdeb-434a-94f8-7ef0fa271bf5" target="25edd2f4-de29-41de-8064-523dbce1975c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="90cdf486-c761-48b8-bfa2-b645b0a69761" source="c92433bb-cdeb-434a-94f8-7ef0fa271bf5" target="458ae996-78f4-47fc-8abb-9a9409b0e88c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="62c7ed90-a306-4107-bf91-76c484cde35d" source="c92433bb-cdeb-434a-94f8-7ef0fa271bf5" target="eb4a36f5-e0d3-403c-aecf-e28759b2a983"/>
   </folder>
   <folder name="Views" id="646783f1-c909-4e69-80d9-75869bfb711f" type="diagrams">
     <folder name="Initial findings" id="4081fa7f-46ae-4656-8047-08aa187cf109">
@@ -1555,7 +1573,7 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="4558ffca-5eb9-4ee1-b2ff-6b7caabafcd3" archimateElement="5db5b568-882c-47e3-ba0f-b18b855e104e">
-          <bounds x="12" y="120" width="925" height="157"/>
+          <bounds x="12" y="120" width="1117" height="157"/>
           <sourceConnection xsi:type="archimate:Connection" id="d795dca5-8541-4e60-84d5-642225f2df34" source="4558ffca-5eb9-4ee1-b2ff-6b7caabafcd3" target="d9b5f572-dce1-4ace-9f03-08fbca289b1e" archimateRelationship="c5389493-78ba-4ec4-8b0a-aaa27f45d92b"/>
           <sourceConnection xsi:type="archimate:Connection" id="82194fab-9ca9-4646-8f9b-f266eadf6cf1" source="4558ffca-5eb9-4ee1-b2ff-6b7caabafcd3" target="0619b8e8-2c55-492b-a53c-e269ebdf0cfc" archimateRelationship="d7034732-b8ac-4e11-99b5-9cc988d330b0"/>
           <sourceConnection xsi:type="archimate:Connection" id="fbbf8f45-1471-4797-aab0-86ef3f4d0122" source="4558ffca-5eb9-4ee1-b2ff-6b7caabafcd3" target="41109afe-8530-4445-9961-dcfaa6ef1260" archimateRelationship="10ee257a-82c5-445b-9341-96db7ec44518"/>
@@ -1685,7 +1703,7 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="3f350aa0-3a83-47c2-8812-fadb186a6927" archimateElement="57eee760-2272-45bf-99ed-efdcfc36d1eb">
-          <bounds x="12" y="1068" width="649" height="109"/>
+          <bounds x="12" y="1068" width="889" height="109"/>
           <sourceConnection xsi:type="archimate:Connection" id="d68bf1a3-495a-4ef7-aabd-e9d1affb133e" source="3f350aa0-3a83-47c2-8812-fadb186a6927" target="1b24fdf0-a88b-4590-8126-39b6f9e9126f" archimateRelationship="85039116-5a83-4eaf-ae0b-0d619db741c4"/>
           <sourceConnection xsi:type="archimate:Connection" id="4a0b4b06-d10b-4c56-8c2f-2cc8d8aaf537" source="3f350aa0-3a83-47c2-8812-fadb186a6927" target="95c3c1c3-5e21-416a-ae88-84f589335b76" archimateRelationship="f1c68a64-ad1a-4fd5-810f-bdebfd586fd3"/>
           <sourceConnection xsi:type="archimate:Connection" id="6fc1fe00-47bb-4943-9b20-2c411aaea52f" source="3f350aa0-3a83-47c2-8812-fadb186a6927" target="c8465fd1-f28a-4c6a-8a72-f7bfa3a32f10" archimateRelationship="e9fe3e70-7924-4ccb-abaf-9167b9308c0e"/>
@@ -2238,5 +2256,34 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
         <documentation>Industry partner viewpoint for research data management </documentation>
       </element>
     </folder>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Policies" id="a5603449-ed71-45be-a917-23df12e69af0">
+      <child xsi:type="archimate:DiagramObject" id="368917f4-9cec-4b60-a397-278db0a95e51" targetConnections="db776bf0-6e57-4675-9107-bf8cd9aff004" archimateElement="25edd2f4-de29-41de-8064-523dbce1975c">
+        <bounds x="36" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b77ea187-14cc-4e75-a62b-bbbfdd674f66" targetConnections="67cfacfd-4910-49f0-8fab-a3b2b0d84126" archimateElement="458ae996-78f4-47fc-8abb-9a9409b0e88c">
+        <bounds x="192" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3436794a-7453-4656-8301-ca526c59662e" archimateElement="c92433bb-cdeb-434a-94f8-7ef0fa271bf5">
+        <bounds x="192" y="24" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="db776bf0-6e57-4675-9107-bf8cd9aff004" source="3436794a-7453-4656-8301-ca526c59662e" target="368917f4-9cec-4b60-a397-278db0a95e51" archimateRelationship="06d8b89f-63f7-4de1-8aac-e40cfa904c64"/>
+        <sourceConnection xsi:type="archimate:Connection" id="67cfacfd-4910-49f0-8fab-a3b2b0d84126" source="3436794a-7453-4656-8301-ca526c59662e" target="b77ea187-14cc-4e75-a62b-bbbfdd674f66" archimateRelationship="90cdf486-c761-48b8-bfa2-b645b0a69761"/>
+        <sourceConnection xsi:type="archimate:Connection" id="dc0b91ae-48fe-403f-8b32-7a079fdc6162" source="3436794a-7453-4656-8301-ca526c59662e" target="3a4766c5-6ac9-451c-ad47-308e98bb7c58" archimateRelationship="62c7ed90-a306-4107-bf91-76c484cde35d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3a4766c5-6ac9-451c-ad47-308e98bb7c58" targetConnections="dc0b91ae-48fe-403f-8b32-7a079fdc6162" archimateElement="eb4a36f5-e0d3-403c-aecf-e28759b2a983">
+        <bounds x="348" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="dce97937-e935-4c6c-b7b5-a7789ddb4b48" archimateElement="8b3bfe70-95e0-46cc-a00f-b154537d0553">
+        <bounds x="672" y="24" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8191f1f2-aa59-4701-93c9-958936fb224c" archimateElement="b441abd7-8655-4695-9fbd-a3a302aaf12f">
+        <bounds x="545" y="142" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8ee458e3-012b-4269-be5c-3c21910badd1" archimateElement="8c73aff8-e5b1-48df-877b-773c48329dcc">
+        <bounds x="696" y="144" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5515ce61-68e2-4d2c-aea9-3b0126e2353b" archimateElement="f3eb2a3b-2669-466a-bd8b-b8977dd9f5e5">
+        <bounds x="863" y="160" width="120" height="55"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
