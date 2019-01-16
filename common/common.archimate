@@ -77,7 +77,16 @@ This can be important to fulfill interneak and external obligations.&#xD;
 </documentation>
     </element>
     <element xsi:type="archimate:Driver" name="FAIR principles" id="9c34b8a2-159d-4b0d-819f-3c76616aa8e3">
-      <documentation>The ability to manage data in accordance with the FAIR guiding principles for scientific data management and stewardship</documentation>
+      <documentation>The FAIR guiding principles for scientific data management and stewadship are intended to improve the management of research data in terms of:
+
+* Findability
+* Accessibility
+* Interoperability
+* Reuse of data
+
+
+
+</documentation>
     </element>
     <element xsi:type="archimate:Driver" name="Flexibility" id="32b3e20d-1ddf-478d-8929-ae784709f889">
       <documentation>The ability to support multiple methods and processes and allowing the researcher to choose the best match for a given task</documentation>
