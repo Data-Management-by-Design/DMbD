@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="DMbD" id="bf3cf619-5b1b-43bd-b5e3-98a4dd678ad1" version="4.0.1">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Data Management by Design" id="bf3cf619-5b1b-43bd-b5e3-98a4dd678ad1" version="4.0.1">
   <folder name="Strategy" id="01cf7606-61d0-4651-ba38-c2847e55a86f" type="strategy"/>
   <folder name="Business" id="1c4a71df-d8b3-467f-a4dc-df4b6c57312c" type="business"/>
   <folder name="Application" id="0dad1e2f-d845-4235-a4e8-26f8de6124ea" type="application">
     <element xsi:type="archimate:ApplicationComponent" name="SDU: OneDrive" id="710382a8-50bb-4650-9600-e4ae813e2b61">
       <documentation>OneDrive is a storage platform at SDU  provided by MicroSoft that can store small to medium amounts of live data (typically word or excel documents, photos, videos, etc).
 OneDrive can be used to store and share sensitive and confidential data. OneDrive supports local file synchronization à la DropBox, although with many limitations on filenames.
-OneDrive supports sharing of individual files/folders with other users. It is possible to grant limited and full access to files (WS3/80, WS3/86).
-OneDrive can store sensitive data and detailed logging and access control is implemented (WS3/42). OneDrive has the ability to let the user attach metadata by an API on individual files and make it searchable (WS2:2/3). However such metadata support (e.g. what files refer to whom for sensitive data) is not implemented at SDU in any automatic way. Therefore procedures have been established for the users to follow, in case they store sensitive data for long periods of time (>30 days) on OneDrive.
+OneDrive supports sharing of individual files/folders with other users. It is possible to grant limited and full access to files.
+OneDrive can store sensitive data and detailed logging and access control is implemented. OneDrive has the ability to let the user attach metadata by an API on individual files and make it searchable. However such metadata support (e.g. what files refer to whom for sensitive data) is not implemented at SDU in any automatic way. Therefore procedures have been established for the users to follow, in case they store sensitive data for long periods of time (>30 days) on OneDrive.
 Since OneDrive can synchronize data to local (and insecure) drives, care should be taken for synchronization of sensitive data.  
 </documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="SDU: NextCloud" id="6b407f04-46cb-4aa6-be72-7cd938bb7f3d">
-      <documentation>NextCloud is storage platform is use at SDU, similar in functionality to OneDrive described above. The solution is based on the open-source NextCloud v13 software. 
+      <documentation>NextCloud is storage platform is use at SDU, similar in functionality to OneDrive. The solution is based on the open-source NextCloud v13 software. 
 As OneDrive, it can store can store  small to medium amounts of live data.
-NextCloud supports sharing of individual files/folders with other users. It is possible to grant limited and full access to files (WS3/80, WS3/86).
-Support for sensitive data is also similar to OneDrive. NextCloud can store sensitive data detailed logging and access control is implemented (WS3/42). NextDrive has the ability to add &quot;tags&quot; to data, which could be used as a limited form of metadata.</documentation>
+NextCloud supports sharing of individual files/folders with other users. It is possible to grant limited and full access to files.
+Support for sensitive data is also similar to OneDrive. NextCloud can store sensitive data detailed logging and access control is implemented. NextDrive has the ability to add &quot;tags&quot; to data, which could be used as a limited form of metadata.</documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="SDU: Secure Server" id="36b51489-dd78-4fcb-9efd-ef046aa5129b">
       <documentation>This a pure terminal server / remote desktop solution that is used for execution of softwares like “Stata” or &quot;Spss&quot; in a controlled environment. It offers limited computational support with a range of standard analysis tools.
@@ -35,68 +35,39 @@ This includes large datasets, as well as sensitive or confidential data.
 The storage support provided by SDUCloud is similar in functionality to the many other &quot;cloud storage&quot; solutions, e.g. OneDrive, Google Drive and, Dropbox. We provide a &quot;virtual drive&quot; for both research projects (shared folders) and personal accounts (private documents).
 
 Keeping sensitive data requires to perform strict access control and
-detailed logging. For this we implemented a system-wide audit of all operations in the system (WS3/42). The system also supports encryption at rest and in transit.
-
-- WS3/42: Enforce strict access policies to data. Maintain detailed log of all operations and access to data
+detailed logging. For this we implemented a system-wide audit of all operations in the system. The system also supports encryption at rest and in transit.
 
 All research projects in the system have associated structured metadata. This
 includes the project's data management plan. A structured data management
 plan allows us to standardize certain parts of it. We can, for example,
-automatically destroy/preserve data at the end of a project (WS2:2/2), or perform scheduled backups.
-
-- WS2:2/2: Data must be preserved according to an agreement
+automatically destroy/preserve data at the end of a project, or perform scheduled backups.
 
 As research is commonly a collaborative discipline, the platform supports
 sharing of individual files/folders with other users. It is possible to grant
-limited or full access to files (WS3/80, WS3/86).
-
-- WS3/80: Allow for collaboration on analysis platform
-- WS3/86: Allow for external collaboration on data analysis
+limited or full access to files.
 
 The SDUCloud platform aims to make data discoverable. 
-We have implemented support in the system for attaching metadata to individual files and make it searchable (WS2:2/3). We are also planning to further implement domain specific metadata (WS3/30, WS2:2/6).
+We have implemented support in the system for attaching metadata to individual files and make it searchable. We are also planning to further implement domain specific metadata.
 
-- WS2:2/3: Metadata describing owner and affiliation
-- WS3/30: The metadata that provides the traceability back to the biobank sample that was analyzed must be preserved through the analysis pipeline.
-- WS2:2/6: Metadata targeted at the designated community
 </documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="SDU: Cloud Compute" id="a8f36552-a032-4942-aa95-509ce74c42bb">
-      <documentation>SDUCloud ships with a &quot;store&quot; of applications. An SDUCloud application is a tool created to facilitate analysis of data and runs in the &quot;cloud&quot;
-(WS3/17). The app store acts as a directory of tools (WS3/71). Tools can be tagged and searched for. 
+      <documentation>SDUCloud ships with a &quot;store&quot; of applications. An SDUCloud application is a tool created to facilitate analysis of data and runs in the &quot;cloud&quot;. The app store acts as a directory of tools. Tools can be tagged and searched for. 
 Each tool contains a concrete and machine readable description of the tool. This
 metadata includes, among others, software versions, fields, and references to
-documentation (WS2:2/11, WS3/35, WS3/39).
-
-- WS3/17: Computers for analysis
-- WS3/71: Keep directory of tools for analysis
-- WS2:2/11: Metadata describing versions of software in the pipeline and its TRL.
-- WS3/35: Exact versions of used software must be documented
-- WS3/39: Version controlled workflows / machine readable workflows in open format
+documentation.
 
 During the design of the SDUCloud compute platform we had a large focus on
 reproducibility, automation, and traceability. We implemented reproducibility
 by using Docker for managing the software stack inside of applications.
-Docker allows to create a &quot;container&quot; of software in the exact versions needed (WS3/31, WS3/41, WS3/40, WS3/82). These containers are portable and can easily move between different hardware.
-
-- WS3/31: It must be possible to keep the same software stack for a whole study
-- WS3/41: Software versioning and validation
-- WS3/40: It must be possible to recreate the desired software stack on demand
-- WS3/82: Keep versions of software and data sync'ed for team members, if needed
+Docker allows to create a &quot;container&quot; of software in the exact versions needed. These containers are portable and can easily move between different hardware.
 
 When an application is executed, the platform saves job results and job parameters
 to a system folder in the user virtual drive. This step archives both the results
 and input parameters, allowing to re-run the application at a later point in
-time (WS3/76).
+time.
 
-- WS3/76: Easy archiving ('freeze') of analysis
-
-We plan to extend the platform to allow the composition of individual applications together to create a workflow. We define workflows using machine readable documents, like the ones used for applications (WS2:2/9, WS2:2/10, WS3/65).
-
-- WS2:2/9: Validated and documented process and software
-- WS2:2/10: Declaration of pipeline for data processing
-- WS3/65: Record steps in the workflow: success, error, restarts
-
+We plan to extend the platform to allow the composition of individual applications together to create a workflow. We define workflows using machine readable documents, like the ones used for applications.
 </documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="a4ddf758-da35-4b1f-8a4c-b8b415c7595f"/>
@@ -2580,7 +2551,7 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
     </folder>
     <folder name="CommonGround" id="dd9ea504-e639-4d39-a712-6d67a9191c33">
       <folder name="Stakeholder Viewpoints" id="47cc5227-3320-425d-9513-07df55abb1fc">
-        <element xsi:type="archimate:ArchimateDiagramModel" name="CISO" id="d794984b-0353-4dd0-adf2-f36fa544106c">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="CISO" id="d794984b-0353-4dd0-adf2-f36fa544106c" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="1e3005ad-8c3e-46c0-a4a1-6381650c5318" targetConnections="54226f09-c7f8-4e31-b740-918f41d7bdab" archimateElement="637f957a-a256-4568-bd7d-8868b096794d">
             <bounds x="240" y="12" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="9723e092-6fe3-43bc-9ac1-9831e8a28630" source="1e3005ad-8c3e-46c0-a4a1-6381650c5318" target="f375e84e-ad3e-4bc9-b400-e2f3722385bf" archimateRelationship="74734ac1-8702-4d5f-bb3c-970cdfa0eaec"/>
@@ -2649,7 +2620,7 @@ It is possible that a few of these should be modeled as drivers. It can be diffi
           <documentation>CISO viewpoint for research data management
 </documentation>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Data Protection Authority" id="bc5c79cb-2cd5-4135-8d55-f72d07027577">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Data Protection Authority" id="bc5c79cb-2cd5-4135-8d55-f72d07027577" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="4c374912-e3ec-4740-b960-0211d0eb01ac" targetConnections="e4000556-edc0-46a6-9344-6ffd64053937" archimateElement="e2492fa0-0b0d-482f-849b-19b30b5b1dff">
             <bounds x="36" y="12" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="82adf0fc-a880-4c3e-a99f-8a5dfe4179f2" source="4c374912-e3ec-4740-b960-0211d0eb01ac" target="e6b1d1ad-549b-4d1d-ad50-0591cd68d165" archimateRelationship="0a39eabf-33df-4c2a-a085-f231544988e0"/>
@@ -2709,7 +2680,7 @@ The national data protection authority is charged with enforcing data protection
 
 </documentation>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Industry Partner" id="8fdf8c24-86a3-4380-9d22-f46ff4345306">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Industry Partner" id="8fdf8c24-86a3-4380-9d22-f46ff4345306" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="cd999c5d-089b-4c4f-9675-aa03ce53fc5a" archimateElement="6e095c8c-5926-49bd-989b-ad08f1220d93">
             <bounds x="60" y="288" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="fc485e22-7452-4c5b-abd6-8ddeb7ccd92f" source="cd999c5d-089b-4c4f-9675-aa03ce53fc5a" target="908ee07a-b0c1-440c-a9c4-c9044409a84a" archimateRelationship="068948be-ff1f-4111-bc18-a5a9cd3474fc"/>
@@ -2751,7 +2722,7 @@ The national data protection authority is charged with enforcing data protection
           </child>
           <documentation>Industry partner viewpoint for research data management </documentation>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="National Archive" id="e64f4745-2487-4888-a412-54724d6846a7">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="National Archive" id="e64f4745-2487-4888-a412-54724d6846a7" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="3761504d-417d-4042-bbf0-37d632311b72" archimateElement="64e5bc20-2bb0-49d6-87e1-d8bb02baa556">
             <bounds x="156" y="24" width="157" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="03b44a01-c6a9-4bef-b606-6a7025e9f151" source="3761504d-417d-4042-bbf0-37d632311b72" target="d1c6a7db-28f0-4163-aa5f-03d9f1894bc6" archimateRelationship="8f9de57d-6296-4859-b668-7f8b862cb38d"/>
@@ -2781,7 +2752,7 @@ The national archive determines if data is of national historic importance and i
 
 </documentation>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Reproducible Research" id="839cdb9a-c8de-4eba-93a7-1fc3ecbfc912">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Reproducible Research" id="839cdb9a-c8de-4eba-93a7-1fc3ecbfc912" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="1271357d-5e0e-4b23-8998-9d28e54fd2c0" archimateElement="3055a6e6-788b-4e31-bdc5-a25f5144f89e">
             <bounds x="48" y="132" width="153" height="80"/>
             <sourceConnection xsi:type="archimate:Connection" id="091d1297-4d24-44c4-9610-6980848c8168" source="1271357d-5e0e-4b23-8998-9d28e54fd2c0" target="e8aabecd-128f-4a56-9299-c647fdf94a0c" archimateRelationship="56576563-eba8-46d4-a1e7-6770de0394a9"/>
@@ -2801,7 +2772,7 @@ The national archive determines if data is of national historic importance and i
             <bounds x="472" y="276" width="153" height="80"/>
           </child>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Research Data Archiving" id="530b70d3-1e26-42aa-99ac-4fdfe36f6c4a">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Research Data Archiving (+++)" id="530b70d3-1e26-42aa-99ac-4fdfe36f6c4a" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="4fcd56f1-aa8a-4b7e-a256-d41f1609a79c" archimateElement="4e033ef0-a0e7-4629-ac6a-352bf4c72b3d">
             <bounds x="24" y="108" width="120" height="55"/>
           </child>
@@ -2818,7 +2789,7 @@ The national archive determines if data is of national historic importance and i
             <bounds x="24" y="204" width="120" height="55"/>
           </child>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="The Researcher" id="b9383106-6344-4033-89c6-dedb28bf6454">
+        <element xsi:type="archimate:ArchimateDiagramModel" name="The Researcher" id="b9383106-6344-4033-89c6-dedb28bf6454" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="7b92d14b-99f1-4aec-95d1-241f6cc76cd5" archimateElement="c254adef-951b-4bc6-afbd-6ed606e6588b">
             <bounds x="180" y="36" width="153" height="80"/>
             <sourceConnection xsi:type="archimate:Connection" id="2e362495-70f3-4756-a85b-1b139d607bc7" source="7b92d14b-99f1-4aec-95d1-241f6cc76cd5" target="376e492b-511b-4db4-ae95-e53c63268b8c" archimateRelationship="a9ff5648-4c0c-46a1-8a54-393a79845431"/>
@@ -2883,7 +2854,7 @@ The national archive determines if data is of national historic importance and i
       </folder>
     </folder>
     <folder name="Examples" id="fc850178-9cd4-40fe-9755-945697e1b40f">
-      <element xsi:type="archimate:ArchimateDiagramModel" name="SDU" id="d8a222fc-0a14-4b5f-b196-c752f78dcd08">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="SDU" id="d8a222fc-0a14-4b5f-b196-c752f78dcd08" viewpoint="requirements_realization">
         <child xsi:type="archimate:DiagramObject" id="e981eddc-547d-408d-874c-4f9a92732bf5" targetConnections="a12092e0-d075-4225-baae-7e6df8714ecd c3a22974-f90b-441e-8959-b905c990c130 ee93f113-ebe7-441e-961b-876155186808 ded5eccb-2b88-4109-b161-f8e7fecd1b77" archimateElement="710382a8-50bb-4650-9600-e4ae813e2b61">
           <bounds x="12" y="12" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="45e8c4dc-2630-4ce8-b341-f1221232f1f0" source="e981eddc-547d-408d-874c-4f9a92732bf5" target="1bb2853a-94eb-40a6-8485-c332e786427a" archimateRelationship="d00d8987-8579-4721-aaa8-52ec2cb272bd"/>
@@ -2986,9 +2957,14 @@ The national archive determines if data is of national historic importance and i
           <bounds x="480" y="1248" width="229" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="a66b17e8-b8ee-4858-9054-a3f119b05394" source="a63201db-4043-440c-82d1-4d503cac125b" target="af99ab7b-8eba-491e-83ba-9ddf73d84f79" archimateRelationship="089ea5e7-dc05-44dc-be9e-defcbadde861"/>
         </child>
+        <documentation>Viewpoint showing how existing data solutions (Late 2018) address the infratructure requirements for research data management indetified through the DMbD activity.
+
+Based on infratructure services implemented or planed at The University of Southern Denmark (SDU) late 2018.
+</documentation>
       </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="CBS" id="7e74be87-ffa4-4168-ac25-2a0e6a723944"/>
     </folder>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Local Policies" id="a5603449-ed71-45be-a917-23df12e69af0">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Local Policies" id="a5603449-ed71-45be-a917-23df12e69af0" viewpoint="motivation">
       <child xsi:type="archimate:DiagramObject" id="dce97937-e935-4c6c-b7b5-a7789ddb4b48" targetConnections="4091e52c-2361-4a59-8ed0-8d78fde66f1c" archimateElement="8b3bfe70-95e0-46cc-a00f-b154537d0553">
         <bounds x="156" y="142" width="133" height="77"/>
       </child>
@@ -3037,7 +3013,8 @@ The national archive determines if data is of national historic importance and i
       <child xsi:type="archimate:DiagramObject" id="4bf8aa3d-dbea-47f5-9a68-062ff97d79ff" targetConnections="4fe14f43-7fa8-4061-b557-bb664a180b7f" archimateElement="10e24e77-8293-4c7e-83ca-a47c65b3a6b6">
         <bounds x="228" y="576" width="133" height="77"/>
       </child>
-      <documentation>Policies at the university influencing research data management.</documentation>
+      <documentation>Policies at the university level influencing or driving research data management.</documentation>
     </element>
   </folder>
+  <purpose>This report contains the modelling of common ground </purpose>
 </archimate:model>
