@@ -817,7 +817,7 @@ This requires that researchers and institutions accept responsibility for the re
 -- Danish Code of Conduct for Research  Integrity
 </documentation>
     </element>
-    <element xsi:type="archimate:Driver" name="The persuit of knowlede" id="3672e0b2-e727-4644-90c1-c058470d5926">
+    <element xsi:type="archimate:Driver" name="The persuit of knowledge" id="3672e0b2-e727-4644-90c1-c058470d5926">
       <documentation>The persuit of knowlede for the sake of knowing</documentation>
     </element>
     <element xsi:type="archimate:Driver" name="Publish or perish" id="99c91cca-de16-406b-8866-891aa19b214f">
@@ -872,6 +872,9 @@ Handling this unpredictablity requires flexibility and resources in the availabl
 </documentation>
     </element>
     <element xsi:type="archimate:Goal" name="Attractive research environment" id="a3e7a1ef-3ac8-4282-af3b-8ba846405809"/>
+    <element xsi:type="archimate:Requirement" name="Data can get a persistent landing page" id="23744e23-25cc-428e-b11f-a2e6fa0a99ed">
+      <documentation>For data to be referenced in publications it must have a Data Object Identifier (DOI) </documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="aace22dd-8ad4-43fe-bcb8-69be9befc324" type="implementation_migration"/>
   <folder name="Other" id="3ef9b990-9301-458e-aeae-ea1e58370cbf" type="other">
@@ -2684,6 +2687,9 @@ The national data protection authority is charged with enforcing data protection
         </child>
         <child xsi:type="archimate:DiagramObject" id="42f17c9c-d13e-4f2b-82fb-85af1d1ef26b" archimateElement="a3e7a1ef-3ac8-4282-af3b-8ba846405809">
           <bounds x="372" y="444" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c0b68b6c-3d42-47b3-882e-775f6d3a86f5" archimateElement="23744e23-25cc-428e-b11f-a2e6fa0a99ed">
+          <bounds x="180" y="600" width="153" height="80"/>
         </child>
       </element>
     </folder>
