@@ -106,7 +106,22 @@ We plan to extend the platform to allow the composition of individual applicatio
 </documentation>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="DTU: Wind Atlas" id="af2d85db-aacb-40b5-b8bb-aadd13db7b64">
-      <documentation>The New European Wind Atlas project is producing high-resolution wind resource maps for Europe, made freely available for use as bases for wind farm planning at sites of interest. These are generated from global meteorological datasets and high-resolution land surface data using an open source regional weather model in combination with a high-resolution microscale flow model. The project offers a web interface similar to Google Maps, where the user can do ad-hoc analysis on the servers hosting the data or interactively mark a range of variables for an area of interest and download the data for further processing locally.  
+      <documentation>The New European Wind Atlas (WA) project is producing high-resolution wind resource maps for Europe, made freely available for use as bases for wind farm planning at sites of interest. These are generated from global meteorological datasets and high-resolution land surface data using an open source regional weather model in combination with a high-resolution microscale flow model. The project offers a web interface similar to Google Maps, where the user can do ad-hoc analysis on the servers hosting the data or interactively mark a range of variables for an area of interest and download the data for further processing locally.  
+
+WA is EU financed and are obliged to make the promised datasets publicly available from April'19 and five years onwards. This relates to the following requirements listed;
+•	Contractual compliance (push to publication in this case? Contractual compliance is in this case &quot;anti-NDA&quot;)
+•	Push to publication
+•	Service reliability according to SLA
+•	Slice data into subsets (I and R in FAIR; interoperability, reusability)
+•	Reuse data, workflows, software, environment etc. (research integrity, research efficiency)
+•	Sufficient technical capability of platform according to research scenario (functional requirements)
+•	Continuously available data collection (long, non-reproducible data series, SLA)
+ •	Reusable data (research efficiency, accessibility)
+•	Appropriate API's for data handling (analysis, reuse)
+•	Data sharing (data federation, permission control)
+- Data format standards
+ 
+
 </documentation>
     </element>
   </folder>
@@ -1028,6 +1043,31 @@ Handling this unpredictablity requires flexibility and resources in the availabl
       <documentation>It must be easy to &quot;freeze&quot; and preserve a working environment including the input data and the data processing pipeline.
 </documentation>
     </element>
+    <element xsi:type="archimate:Requirement" name="Data must be protected according to an agreement" id="daad7b44-0aa8-4b12-9052-3ab2e4be1305">
+      <documentation>It must be possible to ensure that data is handled in accordance with a contract or other agreement with an internal or external party.
+
+ - respect an NDA 
+ - respect a publication condition during an embargo period
+ - respect a data processing agreements
+
+An infrastructure can assist in enforcing agreements in many ways. Some examples:
+
+ - raise user avareness through allerts and reminders
+ - enforce procedures for approval of usage
+ - automated enforsment and releae according to an  embargo/publication agreement
+  </documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Data format standards" id="4e30cf52-6cdd-43a9-8fa8-4f5c9c66b6d5">
+      <documentation>The infrastructure supports working with and conversions between accepted data standards.
+
+Examples of how an infratructure can support data standards:
+ - conversion tools
+ - databases
+ - aggregation of diverse data sources
+ - validation of formatting  
+</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Findable" id="368b319d-b07d-4dd7-93db-025dd5e4c545"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="aace22dd-8ad4-43fe-bcb8-69be9befc324" type="implementation_migration"/>
   <folder name="Other" id="3ef9b990-9301-458e-aeae-ea1e58370cbf" type="other">
@@ -1388,8 +1428,12 @@ Handling this unpredictablity requires flexibility and resources in the availabl
     <element xsi:type="archimate:AssociationRelationship" id="530a2065-fd29-489a-b3ad-5a1f687a511d" source="4e033ef0-a0e7-4629-ac6a-352bf4c72b3d" target="116bf6dd-5cf7-408b-942c-76f52d2f8c3e"/>
     <element xsi:type="archimate:AssociationRelationship" id="ae64e27a-c45c-4847-9b08-21a384889ffa" source="ef32e773-5adc-4f62-968e-8e76c6bf55ad" target="116bf6dd-5cf7-408b-942c-76f52d2f8c3e"/>
     <element xsi:type="archimate:AssociationRelationship" id="ff5cbd45-7b4f-4553-b931-d63c60e452fa" source="4e033ef0-a0e7-4629-ac6a-352bf4c72b3d" target="ef32e773-5adc-4f62-968e-8e76c6bf55ad"/>
-    <element xsi:type="archimate:AssociationRelationship" id="f34418f9-4f14-4334-9b9e-b2a8eeda88c3" source="116bf6dd-5cf7-408b-942c-76f52d2f8c3e" target="f5747401-68e0-4ab0-92d6-a14194dc9196"/>
-    <element xsi:type="archimate:AssociationRelationship" id="74d261e0-0460-4597-9322-20b6bb1e3e58" source="116bf6dd-5cf7-408b-942c-76f52d2f8c3e" target="8c73aff8-e5b1-48df-877b-773c48329dcc"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f34418f9-4f14-4334-9b9e-b2a8eeda88c3" source="116bf6dd-5cf7-408b-942c-76f52d2f8c3e" target="f5747401-68e0-4ab0-92d6-a14194dc9196">
+      <documentation>The code of conduct requires the institution to have a transparent research data policy.</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" id="74d261e0-0460-4597-9322-20b6bb1e3e58" source="116bf6dd-5cf7-408b-942c-76f52d2f8c3e" target="8c73aff8-e5b1-48df-877b-773c48329dcc">
+      <documentation>The code of conduct contains guidelines for minimum retension of research data backing a published finding.</documentation>
+    </element>
     <element xsi:type="archimate:AssociationRelationship" id="a9ff5648-4c0c-46a1-8a54-393a79845431" source="c254adef-951b-4bc6-afbd-6ed606e6588b" target="33465f9b-cb19-4902-a08a-84c2278bf4da"/>
     <element xsi:type="archimate:AssociationRelationship" id="858d9eab-dba4-402b-a708-2960c02d82d2" source="c254adef-951b-4bc6-afbd-6ed606e6588b" target="31929e72-7263-4e39-a193-dde5142bf156"/>
     <element xsi:type="archimate:AssociationRelationship" id="7d21a7ee-b021-4310-b7f5-c038b679a30c" source="c254adef-951b-4bc6-afbd-6ed606e6588b" target="479a11c6-b99d-40ad-8ba7-e3cff926e471"/>
@@ -1471,6 +1515,11 @@ Handling this unpredictablity requires flexibility and resources in the availabl
     <element xsi:type="archimate:AssociationRelationship" id="e66f132a-7439-401e-b0ca-6811d7fd6638" source="0ab2c25a-ab10-4c87-af65-a1fb4630dcd3" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
     <element xsi:type="archimate:AssociationRelationship" id="d753ebae-8254-42d6-9062-f8445a882a3c" source="ce3dfca1-496a-4b3a-907c-0c0027dbc0df" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
     <element xsi:type="archimate:AssociationRelationship" id="34529034-98bc-47e1-8098-204a926b770c" source="1b48dd39-1ded-4587-aeac-ffed95056107" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
+    <element xsi:type="archimate:AssociationRelationship" id="3749c77a-7529-440f-874e-2003e9aab36b" source="e605ae57-3670-45f2-b71e-70ec352cf6dd" target="da800e87-a189-43e2-aa94-8834a50b5e67"/>
+    <element xsi:type="archimate:AssociationRelationship" id="fd0116e4-7cd8-4279-b5f9-07cc0e4ac4b7" source="2f8fc9f0-1d23-4416-963d-625fde0bf5ff" target="daad7b44-0aa8-4b12-9052-3ab2e4be1305"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c07c45e3-d22a-40f0-9a72-6c77c82aafb2" source="daad7b44-0aa8-4b12-9052-3ab2e4be1305" target="da800e87-a189-43e2-aa94-8834a50b5e67"/>
+    <element xsi:type="archimate:AssociationRelationship" id="ae9ac8c8-658d-46b5-8672-e208e0a8dc61" source="4e30cf52-6cdd-43a9-8fa8-4f5c9c66b6d5" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c3be4adc-0852-43e5-bee9-9b78afd9bd83" source="4e30cf52-6cdd-43a9-8fa8-4f5c9c66b6d5" target="da800e87-a189-43e2-aa94-8834a50b5e67"/>
   </folder>
   <folder name="Views" id="646783f1-c909-4e69-80d9-75869bfb711f" type="diagrams">
     <folder name="Initial findings" id="4081fa7f-46ae-4656-8047-08aa187cf109">
@@ -2754,38 +2803,42 @@ The national data protection authority is charged with enforcing data protection
             <sourceConnection xsi:type="archimate:Connection" id="68db28fb-3d47-4ff2-b0ce-e577e3767846" source="cd999c5d-089b-4c4f-9675-aa03ce53fc5a" target="dab9f538-09a6-470f-8f3b-1d74d954bc93" archimateRelationship="7bf86480-3314-438f-a6f6-fe0896d419b9"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="8e72662d-5217-4e1a-a61e-f3c8ec81e2ae" targetConnections="0787f028-e003-45cc-83b9-adacde69edb3" archimateElement="a93698d1-1d8d-43a8-b109-3dc9625719cf">
-            <bounds x="492" y="288" width="145" height="73"/>
+            <bounds x="708" y="288" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="699f6bd3-627e-4d3f-b6b8-4b25606a7d97" source="8e72662d-5217-4e1a-a61e-f3c8ec81e2ae" target="2d6f3ecf-f47b-4343-8b03-30f6c7ebd230" archimateRelationship="c3026adf-5cdc-4a00-88b5-178619eba18c"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="908ee07a-b0c1-440c-a9c4-c9044409a84a" targetConnections="fc485e22-7452-4c5b-abd6-8ddeb7ccd92f" archimateElement="ed4f0454-5cf9-49a1-b07a-ebda88e99509">
             <bounds x="60" y="408" width="145" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="2d6f3ecf-f47b-4343-8b03-30f6c7ebd230" targetConnections="699f6bd3-627e-4d3f-b6b8-4b25606a7d97" archimateElement="00cbc7e0-50c6-4a6a-bfb3-110847a00041">
-            <bounds x="492" y="408" width="145" height="73"/>
+            <bounds x="708" y="408" width="145" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="dbc911e8-bfee-4d81-a9b4-bb21677a8554" targetConnections="0a35e1e6-2560-4ff8-8a17-afe7d12e7b81" archimateElement="2f8fc9f0-1d23-4416-963d-625fde0bf5ff">
-            <bounds x="276" y="288" width="145" height="73"/>
+            <bounds x="384" y="288" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="fb350356-ee1e-4dc6-946a-2b3a0b453499" source="dbc911e8-bfee-4d81-a9b4-bb21677a8554" target="5eb43f5f-62f1-4c23-948d-ee893b9a7f22" archimateRelationship="51d0634b-9ec0-4d1c-bb8f-ac7992ae792f"/>
+            <sourceConnection xsi:type="archimate:Connection" id="bc27292b-f79f-472a-9bfb-2dc58a7d36f6" source="dbc911e8-bfee-4d81-a9b4-bb21677a8554" target="67f3e0ab-fbee-47e3-aaec-acfbbbe3d2e9" archimateRelationship="fd0116e4-7cd8-4279-b5f9-07cc0e4ac4b7"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="dab9f538-09a6-470f-8f3b-1d74d954bc93" targetConnections="68db28fb-3d47-4ff2-b0ce-e577e3767846 f2bfda7c-d157-43aa-a4de-104ad1cdd95c" archimateElement="5a2efb3b-0da0-4085-8afa-126f35f7b7b4">
             <bounds x="60" y="168" width="145" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="17dbe653-eeba-4aa3-aace-2324f7966ead" archimateElement="9d00ec54-ab4a-497e-bc41-efe6bd6f568d">
-            <bounds x="276" y="48" width="145" height="73"/>
+            <bounds x="384" y="48" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="f2bfda7c-d157-43aa-a4de-104ad1cdd95c" source="17dbe653-eeba-4aa3-aace-2324f7966ead" target="dab9f538-09a6-470f-8f3b-1d74d954bc93" archimateRelationship="33c22c12-229c-4555-987d-bba89d990cd8"/>
             <sourceConnection xsi:type="archimate:Connection" id="616b5ee8-6d22-4970-9e16-e06f2fe6f551" source="17dbe653-eeba-4aa3-aace-2324f7966ead" target="75e887b4-6c43-445e-b27b-4afe6148c8f5" archimateRelationship="32490078-1e14-4525-a6fa-ace73c68f017"/>
             <sourceConnection xsi:type="archimate:Connection" id="b1010c9e-fd1d-480e-9f39-895bc560d2c7" source="17dbe653-eeba-4aa3-aace-2324f7966ead" target="3f323ae9-3a97-46c6-a376-b4acdadaeece" archimateRelationship="fa842d4d-9ff0-4452-94f7-389e815e2609"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="75e887b4-6c43-445e-b27b-4afe6148c8f5" targetConnections="616b5ee8-6d22-4970-9e16-e06f2fe6f551" archimateElement="443542b2-a22c-47d2-b1da-66551af976c2">
-            <bounds x="492" y="168" width="145" height="73"/>
+            <bounds x="708" y="168" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="0787f028-e003-45cc-83b9-adacde69edb3" source="75e887b4-6c43-445e-b27b-4afe6148c8f5" target="8e72662d-5217-4e1a-a61e-f3c8ec81e2ae" archimateRelationship="c7f49a17-f7b7-444e-a846-37132cb2302a"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="3f323ae9-3a97-46c6-a376-b4acdadaeece" targetConnections="b1010c9e-fd1d-480e-9f39-895bc560d2c7" archimateElement="0a81a031-49a1-4bbf-b9ad-90f92bd8fadb">
-            <bounds x="276" y="168" width="145" height="73"/>
+            <bounds x="384" y="168" width="145" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="0a35e1e6-2560-4ff8-8a17-afe7d12e7b81" source="3f323ae9-3a97-46c6-a376-b4acdadaeece" target="dbc911e8-bfee-4d81-a9b4-bb21677a8554" archimateRelationship="2028688a-685a-4ecf-a5cc-51f14d474901"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="5eb43f5f-62f1-4c23-948d-ee893b9a7f22" targetConnections="fb350356-ee1e-4dc6-946a-2b3a0b453499" archimateElement="6167c27b-4b04-482f-9a2e-af0455c56e74">
             <bounds x="276" y="408" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="67f3e0ab-fbee-47e3-aaec-acfbbbe3d2e9" targetConnections="bc27292b-f79f-472a-9bfb-2dc58a7d36f6" archimateElement="daad7b44-0aa8-4b12-9052-3ab2e4be1305">
+            <bounds x="492" y="408" width="145" height="73"/>
           </child>
           <documentation>Industry partner viewpoint for research data management </documentation>
         </element>
@@ -2918,6 +2971,36 @@ The national archive determines if data is of national historic importance and i
           </child>
           <documentation>Viewpoint for the individual researcher in relation to research data</documentation>
         </element>
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Research: Academic integrity" id="36a1c4db-2fe7-42b5-95ee-7f627ec610c3">
+          <child xsi:type="archimate:DiagramObject" id="d4954b1b-f3e7-42a4-b665-00ea6928cb75" targetConnections="6dddf9ce-318b-451e-9a6f-278d0890b5e3" archimateElement="8c73aff8-e5b1-48df-877b-773c48329dcc">
+            <bounds x="420" y="180" width="133" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="8083d195-cd31-492b-bba8-449ab20b89e7" targetConnections="32d939fd-4058-41fa-adb6-123db9a3cb00" archimateElement="f5747401-68e0-4ab0-92d6-a14194dc9196">
+            <bounds x="12" y="180" width="133" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="66e03ad7-23d5-4d17-920f-3d9ecf45b422" targetConnections="94cdd2cf-e11c-4ec7-82dd-5e6f85d34cb7" archimateElement="116bf6dd-5cf7-408b-942c-76f52d2f8c3e">
+            <bounds x="216" y="180" width="133" height="77"/>
+            <sourceConnection xsi:type="archimate:Connection" id="6dddf9ce-318b-451e-9a6f-278d0890b5e3" source="66e03ad7-23d5-4d17-920f-3d9ecf45b422" target="d4954b1b-f3e7-42a4-b665-00ea6928cb75" archimateRelationship="74d261e0-0460-4597-9322-20b6bb1e3e58"/>
+            <sourceConnection xsi:type="archimate:Connection" id="32d939fd-4058-41fa-adb6-123db9a3cb00" source="66e03ad7-23d5-4d17-920f-3d9ecf45b422" target="8083d195-cd31-492b-bba8-449ab20b89e7" archimateRelationship="f34418f9-4f14-4334-9b9e-b2a8eeda88c3"/>
+            <sourceConnection xsi:type="archimate:Connection" id="d9860c8f-72a8-40ae-88c7-a13bd59ea4f1" source="66e03ad7-23d5-4d17-920f-3d9ecf45b422" target="0f03b368-64f4-4a18-99c0-a30e77154dcc" archimateRelationship="1134b237-7b16-4317-9dd9-cb26bd5a815d"/>
+            <sourceConnection xsi:type="archimate:Connection" id="d2cea713-37cb-462d-8c23-a876aec09767" source="66e03ad7-23d5-4d17-920f-3d9ecf45b422" target="ba6bad3d-c263-4d4a-ba87-fc4c8b5d4714" archimateRelationship="6114b468-376f-439d-ab87-f9d08206b92e"/>
+            <sourceConnection xsi:type="archimate:Connection" id="ffedac3c-954b-445f-bd61-27938e5eb525" source="66e03ad7-23d5-4d17-920f-3d9ecf45b422" target="686d788c-29e9-4da9-93ac-cd034f42948f" archimateRelationship="88ff1dd7-69bb-4f46-bcf0-0446b0f3eb04"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="ad004cf5-45e6-4fcc-9f0d-b531c78f55d7" archimateElement="4e033ef0-a0e7-4629-ac6a-352bf4c72b3d">
+            <bounds x="216" y="48" width="133" height="77"/>
+            <sourceConnection xsi:type="archimate:Connection" id="94cdd2cf-e11c-4ec7-82dd-5e6f85d34cb7" source="ad004cf5-45e6-4fcc-9f0d-b531c78f55d7" target="66e03ad7-23d5-4d17-920f-3d9ecf45b422" archimateRelationship="530a2065-fd29-489a-b3ad-5a1f687a511d"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="ba6bad3d-c263-4d4a-ba87-fc4c8b5d4714" targetConnections="d2cea713-37cb-462d-8c23-a876aec09767" archimateElement="5ad6c6f2-2c7e-40cd-b2f3-fc97edb6af3d">
+            <bounds x="420" y="312" width="133" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="0f03b368-64f4-4a18-99c0-a30e77154dcc" targetConnections="d9860c8f-72a8-40ae-88c7-a13bd59ea4f1" archimateElement="aa9e755d-553e-47ca-b6fe-ea42ff50d8a9">
+            <bounds x="216" y="312" width="133" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="686d788c-29e9-4da9-93ac-cd034f42948f" targetConnections="ffedac3c-954b-445f-bd61-27938e5eb525" archimateElement="10e24e77-8293-4c7e-83ca-a47c65b3a6b6">
+            <bounds x="12" y="312" width="133" height="77"/>
+          </child>
+        </element>
+        <element xsi:type="archimate:ArchimateDiagramModel" name="Research: Data sharing" id="0865a0c1-ff4f-4ced-8e23-36a7eae1e226"/>
       </folder>
     </folder>
     <folder name="Examples" id="fc850178-9cd4-40fe-9755-945697e1b40f">
@@ -3075,7 +3158,7 @@ This view is based on infratructure services implemented or planed at Aalborg Un
 </documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="DTU" id="a0dd29ec-a68b-47ca-ab8b-cb85aeffb419">
-        <child xsi:type="archimate:DiagramObject" id="4a6b3d98-11df-4d33-8356-b547aeed1001" targetConnections="295504e0-dfb4-4c2b-8010-ae36e671a6b2 902926af-6f92-4d2c-9e17-75b09a5cc47c ec41a696-4449-45af-acab-97e3c2fb34d2 b925a4b3-d188-4caa-a7fd-db7a60480666 b9f8e167-ee94-4854-a04f-f8ebdf0726df 579f9602-0fff-4126-9c82-2fe5cc23d3b6 b925fde2-dcec-493e-8d29-f2ab55693c4b 4a43f670-2aca-449a-8a3b-08ba829014f2 ad253707-89d6-49c6-838a-7a36441be7a7 ea6f0bc6-adaf-4815-ac29-9e26273e93f1 c5c1a0a5-5ecb-4220-b99f-fedd85a780d2" archimateElement="da800e87-a189-43e2-aa94-8834a50b5e67">
+        <child xsi:type="archimate:DiagramObject" id="4a6b3d98-11df-4d33-8356-b547aeed1001" targetConnections="295504e0-dfb4-4c2b-8010-ae36e671a6b2 902926af-6f92-4d2c-9e17-75b09a5cc47c ec41a696-4449-45af-acab-97e3c2fb34d2 b925a4b3-d188-4caa-a7fd-db7a60480666 b9f8e167-ee94-4854-a04f-f8ebdf0726df 579f9602-0fff-4126-9c82-2fe5cc23d3b6 b925fde2-dcec-493e-8d29-f2ab55693c4b 4a43f670-2aca-449a-8a3b-08ba829014f2 ad253707-89d6-49c6-838a-7a36441be7a7 ea6f0bc6-adaf-4815-ac29-9e26273e93f1 c5c1a0a5-5ecb-4220-b99f-fedd85a780d2 4057c894-fccd-4432-9b5f-b996961b4497 935d5008-8265-4f46-944e-84ca833010d5 d2f0b79e-cb83-4729-9a32-58b241bd56d1" archimateElement="da800e87-a189-43e2-aa94-8834a50b5e67">
           <bounds x="48" y="39" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="e0b1305c-01f6-4cb9-b557-c53207d136b1" source="4a6b3d98-11df-4d33-8356-b547aeed1001" target="0b1fae26-f07c-4c5e-9222-17411297a427" archimateRelationship="bc72988a-f8af-433a-a03b-4d71181a2ae6"/>
         </child>
@@ -3140,7 +3223,7 @@ This view is based on infratructure services implemented or planed at Aalborg Un
           <bounds x="492" y="1380" width="229" height="61"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="27c88b64-1e72-41d7-a67a-690ec50a7d71" archimateElement="1b48dd39-1ded-4587-aeac-ffed95056107">
-          <bounds x="492" y="1044" width="229" height="55"/>
+          <bounds x="492" y="1044" width="229" height="61"/>
           <sourceConnection xsi:type="archimate:Connection" id="8e8a4791-9afc-4ce9-9795-d74cd1f28a85" source="27c88b64-1e72-41d7-a67a-690ec50a7d71" target="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" archimateRelationship="34529034-98bc-47e1-8098-204a926b770c"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="e439defe-076a-403e-a27d-03b0f998b2b3" archimateElement="00cbc7e0-50c6-4a6a-bfb3-110847a00041">
@@ -3151,7 +3234,7 @@ This view is based on infratructure services implemented or planed at Aalborg Un
           <bounds x="492" y="36" width="229" height="61"/>
           <sourceConnection xsi:type="archimate:Connection" id="295504e0-dfb4-4c2b-8010-ae36e671a6b2" source="e27aec31-c30a-44f2-8e6f-ca3f8ae7c889" target="4a6b3d98-11df-4d33-8356-b547aeed1001" archimateRelationship="592b9ffa-40fc-4b0d-a616-b6b4ffde7403"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" targetConnections="e0b0d9a5-9a6d-433e-b951-8d63d4db2ab4 edaa1531-d257-47ec-b77e-8875d639b8cb 1f497874-a9b8-43d1-9ca7-2c380454c9dd b0877fb0-72c2-4ce1-89b1-035e730e0dd0 c5085155-af5b-4a23-8c2d-0b3b9913f744 8e8a4791-9afc-4ce9-9795-d74cd1f28a85" archimateElement="af2d85db-aacb-40b5-b8bb-aadd13db7b64">
+        <child xsi:type="archimate:DiagramObject" id="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" targetConnections="e0b0d9a5-9a6d-433e-b951-8d63d4db2ab4 edaa1531-d257-47ec-b77e-8875d639b8cb 1f497874-a9b8-43d1-9ca7-2c380454c9dd b0877fb0-72c2-4ce1-89b1-035e730e0dd0 c5085155-af5b-4a23-8c2d-0b3b9913f744 8e8a4791-9afc-4ce9-9795-d74cd1f28a85 c04389e9-4a2d-4b24-8697-a6d0ddd3352e" archimateElement="af2d85db-aacb-40b5-b8bb-aadd13db7b64">
           <bounds x="36" y="672" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="60f1ab48-42f2-4098-9b4d-c0cb741b3411" source="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" target="a286c04b-e074-4d02-be5f-25d8ab3d1f27" archimateRelationship="60bcc069-15d5-4b56-81e4-dbced7ee9d5b"/>
         </child>
@@ -3159,6 +3242,22 @@ This view is based on infratructure services implemented or planed at Aalborg Un
           <bounds x="492" y="756" width="229" height="61"/>
           <sourceConnection xsi:type="archimate:Connection" id="e0b0d9a5-9a6d-433e-b951-8d63d4db2ab4" source="49d8c21e-4bad-4e93-afd8-d6f711eb9e0d" target="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" archimateRelationship="0f699da3-cc9d-402f-9ab1-fee180f33a25"/>
           <sourceConnection xsi:type="archimate:Connection" id="ea6f0bc6-adaf-4815-ac29-9e26273e93f1" source="49d8c21e-4bad-4e93-afd8-d6f711eb9e0d" target="4a6b3d98-11df-4d33-8356-b547aeed1001" archimateRelationship="f9a40441-ef03-42a0-80a6-eda99f855b65"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e0cebff7-f529-4669-bc92-6ae6c46605d8" archimateElement="e605ae57-3670-45f2-b71e-70ec352cf6dd">
+          <bounds x="888" y="816" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4057c894-fccd-4432-9b5f-b996961b4497" source="e0cebff7-f529-4669-bc92-6ae6c46605d8" target="4a6b3d98-11df-4d33-8356-b547aeed1001" archimateRelationship="3749c77a-7529-440f-874e-2003e9aab36b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9faf4e96-f982-4c1a-a6be-5fe2aa50cd8d" archimateElement="daad7b44-0aa8-4b12-9052-3ab2e4be1305">
+          <bounds x="888" y="888" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="935d5008-8265-4f46-944e-84ca833010d5" source="9faf4e96-f982-4c1a-a6be-5fe2aa50cd8d" target="4a6b3d98-11df-4d33-8356-b547aeed1001" archimateRelationship="c07c45e3-d22a-40f0-9a72-6c77c82aafb2"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a46601e1-78dc-4964-ac4d-e77558372d35" archimateElement="4e30cf52-6cdd-43a9-8fa8-4f5c9c66b6d5">
+          <bounds x="888" y="744" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c04389e9-4a2d-4b24-8697-a6d0ddd3352e" source="a46601e1-78dc-4964-ac4d-e77558372d35" target="a69f109a-3b96-4013-b5b5-e0f702e4e0c3" archimateRelationship="ae9ac8c8-658d-46b5-8672-e208e0a8dc61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d2f0b79e-cb83-4729-9a32-58b241bd56d1" source="a46601e1-78dc-4964-ac4d-e77558372d35" target="4a6b3d98-11df-4d33-8356-b547aeed1001" archimateRelationship="c3be4adc-0852-43e5-bee9-9b78afd9bd83"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7e22d933-e61f-4631-a769-897c1aec0fcb" archimateElement="368b319d-b07d-4dd7-93db-025dd5e4c545">
+          <bounds x="898" y="979" width="120" height="55"/>
         </child>
         <documentation>Viewpoint showing existing data services addressing the infratructure requirements for research data management indetified through the DMbD activity.
 
@@ -3237,6 +3336,10 @@ This view is based on infratructure services implemented or planed at the Univer
     </element>
   </folder>
   <purpose>This report contains the modelling of common ground for research data management in a university setting. This is the result of work carried out in the Danish Datamanagement Forum activity Data Management by Design in 2018. 
+
+Reading through this report in its printed form may not be the best way to experience it. The imformation is far better presented by loading the model into an architecture model browser or using a web brewser to view the onlibe HTML version. Look at the projects GiHub page for decriptions of how best to browse the model from which this report is generated.
+
+https://github.com/Data-Management-by-Design/DMbD
 
 The Data Management by Design activity had partisipation from these danish universities:
 
