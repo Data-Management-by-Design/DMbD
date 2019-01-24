@@ -139,6 +139,22 @@ The underlying infrastructure (servers, filesystems) and QoS (guaranteed uptime)
 
 </documentation>
     </element>
+    <element xsi:type="archimate:ApplicationComponent" name="AAU: Research Data Archive" id="59246f4f-164a-4b2a-8a8e-45df3640d285">
+      <documentation>The AAU Research Data Archive is a research data depositing service that can be used by AAU researchers to stora data or later retrieval. It is closely integrated with the private cloud infratructure for research at AAU. Large datasets can be moved into and out of the archive very quickly. 
+
+ - the archive implements logging </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="AAU: SMB file shares" id="b3a31242-08fd-4d1c-8003-b4b53edc1501">
+      <documentation>Once you have been registered in Aalborg University’s IT systems, your personal document area will be created on the server. This is where you can store your data.
+If you are using one of our pre-installed Windows computers, you can find your document area under &quot;Libraries&quot; and then &quot;Documents&quot;. If you are using a pre-installed Windows computer, your documents are automatically synchronised; this means that you can always find an updated version of your files on your hard drive and on the server.
+
+If several users need to work on the same files, you can use a group folder, called a fileshare. If you need a fileshare, simply send an email to support@its.aau.dk in which you include the desired name of your fileshare and the name (username) of the users who need access to the fileshare.
+
+You will gain access to your own files on all your devices, and you can access these files anywhere via VPN.
+
+If you are using your own Windows computer, a Mac computer or the Linux OS, you need to manually connect to your document area.
+</documentation>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="fc2884bb-f781-4049-8ff7-c99c70101f92" type="technology"/>
   <folder name="Motivation" id="5ad3849d-879b-4ad6-a1b8-2592b810747d" type="motivation">
@@ -1553,6 +1569,11 @@ Examples of how an infratructure can support data standards:
     <element xsi:type="archimate:AssociationRelationship" id="ae249c5c-4e0b-405a-a43b-3bf18dbc3391" source="817b2aca-01ab-4e53-88c9-f0c97467322d" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
     <element xsi:type="archimate:AssociationRelationship" id="faeeec80-4df0-4b3c-9e43-9c779c83c83e" source="1b48dd39-1ded-4587-aeac-ffed95056107" target="da800e87-a189-43e2-aa94-8834a50b5e67"/>
     <element xsi:type="archimate:AssociationRelationship" id="fe4779e8-62f1-4b2c-858d-248ca260b51c" source="e5d5e450-e6f6-4c4d-bba2-e256bb482ca6" target="af2d85db-aacb-40b5-b8bb-aadd13db7b64"/>
+    <element xsi:type="archimate:AssociationRelationship" id="ba2fd117-698e-4312-86ef-35d702465092" source="ed4f0454-5cf9-49a1-b07a-ebda88e99509" target="59246f4f-164a-4b2a-8a8e-45df3640d285"/>
+    <element xsi:type="archimate:AssociationRelationship" id="35976049-8834-49e9-9b90-c422423dccc3" source="ed4f0454-5cf9-49a1-b07a-ebda88e99509" target="b3a31242-08fd-4d1c-8003-b4b53edc1501"/>
+    <element xsi:type="archimate:AssociationRelationship" id="df3fd141-9abb-4d86-9e5f-3623a42473e5" source="e605ae57-3670-45f2-b71e-70ec352cf6dd" target="59246f4f-164a-4b2a-8a8e-45df3640d285"/>
+    <element xsi:type="archimate:AssociationRelationship" id="e4ce4622-b7d1-4a04-b2fc-0e148d35ec21" source="817b2aca-01ab-4e53-88c9-f0c97467322d" target="b3a31242-08fd-4d1c-8003-b4b53edc1501"/>
+    <element xsi:type="archimate:AssociationRelationship" id="da06ae3f-4929-47b4-ab1c-b6794682e258" source="79881ab7-60ea-4e76-b4e0-c9c667c4800f" target="59246f4f-164a-4b2a-8a8e-45df3640d285"/>
   </folder>
   <folder name="Views" id="646783f1-c909-4e69-80d9-75869bfb711f" type="diagrams">
     <folder name="Initial findings" id="4081fa7f-46ae-4656-8047-08aa187cf109">
@@ -3179,15 +3200,38 @@ This view is based on infratructure services implemented or planed at The Univer
           <sourceConnection xsi:type="archimate:Connection" id="5cdb9521-ea02-4883-aa1d-75d4d4d8b941" source="dc3ad0a6-6643-4f90-a4d9-3dae30fb9255" target="0fa4c9cc-4ff7-4d71-99ef-0fefbe3888cc" archimateRelationship="189b4ff7-80db-4227-a43e-e4749722a8d0"/>
           <sourceConnection xsi:type="archimate:Connection" id="680ecf68-f8ad-48aa-94e1-406dea9308ef" source="dc3ad0a6-6643-4f90-a4d9-3dae30fb9255" target="0e268670-a16c-4101-a6dd-aa7149d8461c" archimateRelationship="23514065-b482-49d8-887b-dff5519e9112"/>
         </child>
-        <documentation>Viewpoint showing existing data services addressing the infratructure requirements for research data management indetified through the DMbD activity.
+        <documentation>Viewpoint showing examples of matching the requirements for research data management infrastructures that has been identified through the DMbD activity to some existing data services.
 
-This view is based on infratructure services implemented or planed at Copenhagen Business School (CBS) late 2018.
+This view is based on examples of infrastructure services implemented at Copenhagen Business School (CBS) late 2018.
 </documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="AAU Examples" id="85c4d785-01a9-43f7-af7b-541c9aa8ecb7" viewpoint="requirements_realization">
-        <documentation>Viewpoint showing existing data services addressing the infratructure requirements for research data management indetified through the DMbD activity.
+        <child xsi:type="archimate:DiagramObject" id="5be9aab7-c1fe-42d1-bbf4-fa6400d1bd0b" targetConnections="092c0835-9630-4590-a8ac-d0049199b535 1713af1d-f378-4f9b-9a8e-a9693e5d94d4 cf38293e-d69b-40ec-86cd-fd08e1126a19" archimateElement="59246f4f-164a-4b2a-8a8e-45df3640d285">
+          <bounds x="84" y="15" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="09b03f0a-e29c-4b42-9761-4423b5c6bdee" targetConnections="6f534281-556d-478f-ad57-680c488939e9 4f27da1e-8af8-4e32-ac3a-4edf5b7ad729" archimateElement="b3a31242-08fd-4d1c-8003-b4b53edc1501">
+          <bounds x="84" y="231" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="da0c5724-22a9-4de5-a8cc-cc372bce5e14" archimateElement="e605ae57-3670-45f2-b71e-70ec352cf6dd">
+          <bounds x="432" y="84" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1713af1d-f378-4f9b-9a8e-a9693e5d94d4" source="da0c5724-22a9-4de5-a8cc-cc372bce5e14" target="5be9aab7-c1fe-42d1-bbf4-fa6400d1bd0b" archimateRelationship="df3fd141-9abb-4d86-9e5f-3623a42473e5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5eaad34c-37f1-4ccd-bb99-c155c66dd768" archimateElement="79881ab7-60ea-4e76-b4e0-c9c667c4800f">
+          <bounds x="432" y="156" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cf38293e-d69b-40ec-86cd-fd08e1126a19" source="5eaad34c-37f1-4ccd-bb99-c155c66dd768" target="5be9aab7-c1fe-42d1-bbf4-fa6400d1bd0b" archimateRelationship="da06ae3f-4929-47b4-ab1c-b6794682e258"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="558a141e-f900-453f-9f5e-ecd847ae6182" archimateElement="ed4f0454-5cf9-49a1-b07a-ebda88e99509">
+          <bounds x="432" y="12" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="092c0835-9630-4590-a8ac-d0049199b535" source="558a141e-f900-453f-9f5e-ecd847ae6182" target="5be9aab7-c1fe-42d1-bbf4-fa6400d1bd0b" archimateRelationship="ba2fd117-698e-4312-86ef-35d702465092"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6f534281-556d-478f-ad57-680c488939e9" source="558a141e-f900-453f-9f5e-ecd847ae6182" target="09b03f0a-e29c-4b42-9761-4423b5c6bdee" archimateRelationship="35976049-8834-49e9-9b90-c422423dccc3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="705cf947-13cf-44d6-a6cf-fbf3fac09874" archimateElement="817b2aca-01ab-4e53-88c9-f0c97467322d">
+          <bounds x="432" y="228" width="229" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4f27da1e-8af8-4e32-ac3a-4edf5b7ad729" source="705cf947-13cf-44d6-a6cf-fbf3fac09874" target="09b03f0a-e29c-4b42-9761-4423b5c6bdee" archimateRelationship="e4ce4622-b7d1-4a04-b2fc-0e148d35ec21"/>
+        </child>
+        <documentation>Viewpoint showing examples of matching the requirements for research data management infrastructures that has been identified through the DMbD activity to some existing data services.
 
-This view is based on infratructure services implemented or planed at Aalborg University (AAU) late 2018.
+This view is based on examples of infrastructure services implemented at Aalborg University (AAU) late 2018.
 </documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="DTU Examples" id="a0dd29ec-a68b-47ca-ab8b-cb85aeffb419" viewpoint="requirements_realization">
