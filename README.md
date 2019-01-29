@@ -31,7 +31,7 @@ This model contains motivational viewpoints for varous RDM-stakeholders in a uni
 ---
 
 The full model is available as a printable report in
-[PDF](exported/common.pdf) or 
+[PDF](common/exported/common-model.pdf) or 
 [HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format. 
 But be aware, that reading through the printed report may not be the best way to experience the model. The imformation is far better presented by loading the [model file](common/common.archimate) into an architecture model browser like [Archi](https://www.archimatetool.com/).
 
