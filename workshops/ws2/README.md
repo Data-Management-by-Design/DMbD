@@ -1,11 +1,13 @@
-# Data Management by Design - Workshop 3 - Analysing data
+# Data Management by Design - Workshop 2 - Collecting data
 
 Here you can find the materials related to the second workshop of the
 'Data Management by Design' activity.
 
 The goal of the workshop was to identify important requirements to the
-infrastructure supporting the analysis and publishing of research data in a
+infrastructure supporting the collection of research data in a
 university setting. 
+
+The presenentation from the workshop is available as a [PDF](ws2-slides.pdf). 
 
 ## Method
 
@@ -16,29 +18,28 @@ research data at universities.
 ![Example of the simplified ArchiMate motivation modelling used in the workshop](../ws1/SimpleMotivationExample.svg)
 
 Each workshop participant prepared examples of drivers, requirements
-and goals from interviews with researchers in their institution. The
-modelling modeling was done as tables in a spreadsheet, like in the second workshop.
+and goals for a number of stakeholders in their institution. The
+modelling subset was preserved but this time the modeling was done in
+the form of a table in a spreadsheet. The lesson from the first
+workshop was that creating an ArchiMate model directly at the workshop
+was not efficient.
 
-At the workshop all participants worked jointly to come up with
-drivers, goals and infrastructure requirements. In this third workshop
-the participants had become familiar with motivational modelling and
-were extreemly productive, and managed to revisit the subject of the
-previous worshops.
+At the workshop the participants split into three groups that expanded
+on gaps in the prepaired modelling scenarios.
 
 ## Results
 
 The combined tables from the workshop preparation and the workshop can
-be found in the [raw-data directory](raw-data). There are sheets for
-goals, drivers and infrastructure requirements for different classes
-of stakeholders that addresses all parts of the lifecykle of research
-data.
+be found in the [raw-data directory](raw-data). There is a sheet for
+each group.
+
 
 The combined results from all workshops have been collected into a
 single model in the [common directory](../common).
 
 ## Presentation
 
-The presenentation from the workshop is available as a [PDF](ws3-slides.pdf).
+The presenentation from the workshop is available as a [PDF](ws2-slides.pdf). 
 
 # Licence 
 
