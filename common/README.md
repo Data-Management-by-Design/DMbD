@@ -15,11 +15,11 @@ management.
 
 The common ground model is in the file [common.archimate](common.archimate) which must be opened using [Archi](https://www.archimatetool.com/).
 
-Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/html/index.html).
+Aternatively you can [view it directly in your browser](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/html/index.html).
 
 Printable report style versions versions are avilable in
 [PDF](exported/common.pdf) or
-[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format.
+[HTML](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/exported/common-model.html) format.
 
 # Attribution
 
