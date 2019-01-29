@@ -4,8 +4,10 @@ Here you can find the materials related to the first workshop of the
 'Data Management by Design' activity.
 
 The goal of the workshop was to identify important requirements to the
-implementation of a research data archive in a university setting from
+implementation of a **research data archive** in a university setting from
 the various stakeholders along with their primary motives.
+
+The presenentation from the workshop is available as a [PDF](ws1-slides.pdf). 
 
 ## Method
 
@@ -29,7 +31,7 @@ The combined results from all workshops have been collected into a single model 
 
 ## Presentation
 
-The presenentation from the workshop is available as a [PDF](ws1-slides.pdf).
+The presenentation from the workshop is available as a [PDF](ws1-slides.pdf). 
 
 The modelling examples used in the presentation at the workshop are in
 [WS1presentation.archimate](WS1presentation.archimate) which must be

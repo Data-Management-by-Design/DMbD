@@ -21,7 +21,7 @@ Through the activities of the DM Forum its members have achieved insight into th
 The Research Data Management by Design activity tried to capture what RDM means in relation to digital infrastructures for research and document the findings as a formal model in the ArchiMate modelling language. Specifically, the goal was to establish the common understanding of what is required of the digital infrastructures for research data to support and improve research data management in a university setting.
 
 # An architectural  model of the motivation for RDM
-This model contains motivational viewpoints for varous RDM-stakeholders in a university setting. It is the result of work carried out in the Danish Datamanagement Forum activity Data Management by Design in 2018. Data for the model was collected through a series of [workshops(workshops)] with participants representing a wide selection of RDM-stakeholders. 
+This model contains motivational viewpoints for varous RDM-stakeholders in a university setting. It is the result of work carried out in the Danish Datamanagement Forum activity Data Management by Design in 2018. Data for the model was collected through a series of [workshops](workshops) with participants representing a wide selection of RDM-stakeholders. 
 
 ---
 ## NOTICE links to directily browsable content are currently broken. I am working on fixing this. Please try again later.  
@@ -31,7 +31,7 @@ This model contains motivational viewpoints for varous RDM-stakeholders in a uni
 The full model is available as a printable report in
 [PDF](exported/common.pdf) or 
 [HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format. 
-But be aware, that reading through the printed report may not be the best way to experience the model. The imformation is far better presented by loading the [common.archimate](model file) into an architecture model browser like [Archi](https://www.archimatetool.com/).
+But be aware, that reading through the printed report may not be the best way to experience the model. The imformation is far better presented by loading the [model file](common/common.archimate) into an architecture model browser like [Archi](https://www.archimatetool.com/).
 
 Aternatively you can [view it directly in your browser](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/html/index.html).  
 

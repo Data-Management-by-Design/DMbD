@@ -7,6 +7,8 @@ The goal of the workshop was to identify important requirements to the
 infrastructure supporting the analysis and publishing of research data in a
 university setting. 
 
+The presenentation from the workshop is available as a [PDF](ws3-slides.pdf). 
+
 ## Method
 
 A subset of the ArchiMate language is used to model the motivations
@@ -38,7 +40,7 @@ single model in the [common directory](../common).
 
 ## Presentation
 
-The presenentation from the workshop is available as a [PDF](ws3-slides.pdf).
+The presenentation from the workshop is available as a [PDF](ws3-slides.pdf). 
 
 # Licence 
 
