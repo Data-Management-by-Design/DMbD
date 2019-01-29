@@ -24,8 +24,10 @@ The Research Data Management by Design activity tried to capture what RDM means 
 This model contains motivational viewpoints for varous RDM-stakeholders in a university setting. It is the result of work carried out in the Danish Datamanagement Forum activity Data Management by Design in 2018. Data for the model was collected through a series of [workshops](workshops) with participants representing a wide selection of RDM-stakeholders. 
 
 ---
-## NOTICE links to directily browsable content are currently broken. I am working on fixing this. Please try again later.  
- / Bo Bai  
+
+## NOTICE links to browsable content are currently broken. I am working on fixing this. Please try again later.  
+/ Bo Bai  
+
 ---
 
 The full model is available as a printable report in
