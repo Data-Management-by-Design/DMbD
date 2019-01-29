@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Access to data is logged for auditing</title>
+	<title>Data processing activities are logged for auditing</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -20,7 +20,7 @@
 <body>
 	<div class="panel panel-default root-panel">
 		<div class="panel-heading root-panel-heading">
-			<b>Access to data is logged for auditing</b>
+			<b>Data processing activities are logged for auditing</b>
 			(<span class="i18n-elementtype-Requirement"></span>)
 			<a class="glyphicon glyphicon-info-sign" id="hint-Requirement" target="hint"></a>
 		</div>
@@ -35,9 +35,13 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<textarea id="docsrc" style="display:none">It must be logged when an agent, whether a user or a system, is granted access to data.
+						<textarea id="docsrc" style="display:none">In general it must be logged when an agent, whether a user or a system, is granted access to data.
 
-It will often. like in GDPR, be a requirement that the reason for granting the access to the data is included in the log..
+When diealing with personal data this requirement is extended by the GDPR to:
+
+Records of processing activities must be maintained that include purposes of the processing, categories involved and envisaged time limits. The records must be made available to the supervisory authority on request (Article 30).[25]
+
+-- Wikipedia
 
 </textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
