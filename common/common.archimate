@@ -2926,43 +2926,6 @@ The national archive determines if data is of national historic importance and i
 
 </documentation>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Research: Reproducible Research" id="839cdb9a-c8de-4eba-93a7-1fc3ecbfc912" viewpoint="motivation">
-          <child xsi:type="archimate:DiagramObject" id="1271357d-5e0e-4b23-8998-9d28e54fd2c0" archimateElement="3055a6e6-788b-4e31-bdc5-a25f5144f89e">
-            <bounds x="48" y="132" width="153" height="80"/>
-            <sourceConnection xsi:type="archimate:Connection" id="091d1297-4d24-44c4-9610-6980848c8168" source="1271357d-5e0e-4b23-8998-9d28e54fd2c0" target="e8aabecd-128f-4a56-9299-c647fdf94a0c" archimateRelationship="56576563-eba8-46d4-a1e7-6770de0394a9"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="8ba25b77-c3b5-4da0-9bb0-a66a2bddda63" archimateElement="2c472f5d-84e7-46be-85ca-fa4bcadd251e">
-            <bounds x="264" y="276" width="153" height="80"/>
-            <sourceConnection xsi:type="archimate:Connection" id="b521e394-1296-4a38-afda-8c1df7bd14fa" source="8ba25b77-c3b5-4da0-9bb0-a66a2bddda63" target="e8aabecd-128f-4a56-9299-c647fdf94a0c" archimateRelationship="e1e5069b-b25d-4e71-b717-286bf5644d0d"/>
-            <sourceConnection xsi:type="archimate:Connection" id="c0994bd5-f876-43df-9436-a7fc71061dab" source="8ba25b77-c3b5-4da0-9bb0-a66a2bddda63" target="740e44b4-ff55-4cc8-97c6-315584fc3009" archimateRelationship="1af2786c-59fb-448e-a359-74dab98aea2c"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="e8aabecd-128f-4a56-9299-c647fdf94a0c" targetConnections="091d1297-4d24-44c4-9610-6980848c8168 b521e394-1296-4a38-afda-8c1df7bd14fa" archimateElement="6766a82d-b48d-46f9-b00b-af0792775aeb">
-            <bounds x="48" y="276" width="153" height="80"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="34ba15fc-b1f4-4705-8ace-90cab84c8a94" archimateElement="ad4524b7-a870-409c-b758-07b67311dae8">
-            <bounds x="48" y="408" width="153" height="80"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="740e44b4-ff55-4cc8-97c6-315584fc3009" targetConnections="c0994bd5-f876-43df-9436-a7fc71061dab" archimateElement="44e18be3-bbe9-4c9c-a2ff-e342403fd709">
-            <bounds x="472" y="276" width="153" height="80"/>
-          </child>
-        </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Research: Research Data Archiving (+++)" id="530b70d3-1e26-42aa-99ac-4fdfe36f6c4a" viewpoint="motivation">
-          <child xsi:type="archimate:DiagramObject" id="4fcd56f1-aa8a-4b7e-a256-d41f1609a79c" archimateElement="4e033ef0-a0e7-4629-ac6a-352bf4c72b3d">
-            <bounds x="24" y="108" width="120" height="55"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="1a534416-76e5-4d37-8c59-53e4a44cda4d" archimateElement="eaf774b6-ffad-40b8-bf12-7df040366194">
-            <bounds x="24" y="12" width="120" height="55"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="b07bae7b-7503-4c5c-9b02-47d6375609d7" archimateElement="1d7bf6c4-a603-46be-8e10-252bf3ca1062">
-            <bounds x="204" y="12" width="120" height="55"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="c88f15de-a9ce-4549-be35-d669d42ddc21" archimateElement="9c34b8a2-159d-4b0d-819f-3c76616aa8e3">
-            <bounds x="204" y="108" width="120" height="55"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="648a7242-f93c-4a00-9498-e3f735bb7722" archimateElement="0bb6e6af-33ae-4f20-8106-0382b495ecd1">
-            <bounds x="24" y="204" width="120" height="55"/>
-          </child>
-        </element>
         <element xsi:type="archimate:ArchimateDiagramModel" name="Research: The Researcher" id="b9383106-6344-4033-89c6-dedb28bf6454" viewpoint="motivation">
           <child xsi:type="archimate:DiagramObject" id="7b92d14b-99f1-4aec-95d1-241f6cc76cd5" archimateElement="c254adef-951b-4bc6-afbd-6ed606e6588b">
             <bounds x="180" y="36" width="153" height="80"/>
@@ -3054,7 +3017,6 @@ The national archive determines if data is of national historic importance and i
             <bounds x="12" y="312" width="133" height="77"/>
           </child>
         </element>
-        <element xsi:type="archimate:ArchimateDiagramModel" name="Research: Data sharing" id="0865a0c1-ff4f-4ced-8e23-36a7eae1e226"/>
       </folder>
     </folder>
     <folder name="Examples" id="fc850178-9cd4-40fe-9755-945697e1b40f">
@@ -3345,12 +3307,6 @@ The Large Scale Facility at Risø Campus enables research projects and companies
 
 The New European Wind Atlas project is producing high-resolution wind resource maps for Europe, made freely available for use as bases for wind farm planning at sites of interest. These are generated from global meteorological datasets and high-resolution land surface data using an open source regional weather model in combination with a high-resolution microscale flow model. The project offers a web interface similar to Google Maps, where the user can do ad-hoc analysis on the servers hosting the data or interactively mark a range of variables for an area of interest and download the data for further processing locally.  
 
-</documentation>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="KU Examples" id="da7c6ab0-29f5-4f39-8e10-c6edfaee613f" viewpoint="requirements_realization">
-        <documentation>Viewpoint showing existing data services addressing the infratructure requirements for research data management indetified through the DMbD activity.
-
-This view is based on infratructure services implemented or planed at the University of Copenhagen (KU) late 2018.
 </documentation>
       </element>
     </folder>
