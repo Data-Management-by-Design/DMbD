@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Monitoring and alarming (success, error)</title>
+	<title>Monitoring and reporting on workflows</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -20,7 +20,7 @@
 <body>
 	<div class="panel panel-default root-panel">
 		<div class="panel-heading root-panel-heading">
-			<b>Monitoring and alarming (success, error)</b>
+			<b>Monitoring and reporting on workflows</b>
 			(<span class="i18n-elementtype-Requirement"></span>)
 			<a class="glyphicon glyphicon-info-sign" id="hint-Requirement" target="hint"></a>
 		</div>
@@ -35,7 +35,12 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<textarea id="docsrc" style="display:none"></textarea>
+						<textarea id="docsrc" style="display:none">The infratructure must support monitoring, recording, and reporting on the progress and success or failure of processes in a workflow.  At least these services should be available :
+
+ - a log of the steps in the workflow and thier exit status: success, error, restart
+ - it should be possible to raise an alarm when a workflow fails
+
+</textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
