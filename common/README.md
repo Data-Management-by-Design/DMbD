@@ -1,6 +1,6 @@
 # Data Management by Design - Common Architecture Model
 
-Here you can find Architectural Views related to Research Data
+Here you can find architectural views related to Research Data
 Management in a university setting.
 
 The achitectural views presented here are the result of an activity
@@ -18,7 +18,7 @@ The common ground model is in the file [common.archimate](common.archimate) whic
 Aternatively you can [view it directly in your browser](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/html/index.html).
 
 Printable report style versions versions are avilable in
-[PDF](exported/common.pdf) or
+[PDF](exported/common-model.pdf) or
 [HTML](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/exported/common-model.html) format.
 
 # Attribution
