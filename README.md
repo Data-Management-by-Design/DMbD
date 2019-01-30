@@ -32,10 +32,10 @@ This model contains motivational viewpoints for varous RDM-stakeholders in a uni
 
 The full model is available as a printable report in
 [PDF](common/exported/common-model.pdf) or 
-[HTML](https://cdn.rawgit.com/Data-Management-by-Design/DMbD/7998b0bf/common/exported/common.html) format. 
+[HTML](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/exported/common-model.html) format.
 But be aware, that reading through the printed report may not be the best way to experience the model. The imformation is far better presented by loading the [model file](common/common.archimate) into an architecture model browser like [Archi](https://www.archimatetool.com/).
 
-Aternatively you can [view it directly in your browser](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/html/index.html).
+Aternatively you can [use the dynamic web version directly in your browser](https://raw.githack.com/Data-Management-by-Design/DMbD/master/common/html/index.html).
 
 Notice: During the activity it was deemed most productive to only use a small subset of the ArchiMate modelling language, namely; drivers, goals, stakeholders, and requirements. The modelling of relations has been reduced to only model simple association, and where it is very obvious compositions. The simplified modelleing is carried through to the model.
 

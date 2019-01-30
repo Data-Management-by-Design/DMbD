@@ -1,6 +1,6 @@
 # Data Management by Design - Common Architecture Model
 
-Here you can find Architectural Views related to Research Data
+Here you can find architectural views related to Research Data
 Management in a university setting.
 
 The achitectural views presented here are the result of an activity
