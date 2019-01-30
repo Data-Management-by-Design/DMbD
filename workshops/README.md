@@ -7,7 +7,7 @@ The goal of the workshops was to identify important requirements to the
 implementation of **research data infrastructure** in a university setting from
 the various stakeholders along with their primary motives.
 
-Each workshop had a fokus on part of the "research data lifecycle" as
+Each workshop had a focus on part of the "research data lifecycle" as
 illustrated below.
 
 ![Themes of the workshops](workshops.png)
@@ -25,7 +25,7 @@ adopted.
 
 ![Example of the simplified ArchiMate motivation modelling used in the workshop](SimpleMotivationExample.svg)
 
-This simlper subset was used to model the motivations and goals of
+This simpler subset was used to model the motivations and goals of
 stakeholders having requirements to the handling of research data at
 universities during all the workshops.
 
@@ -38,7 +38,7 @@ The presentation from the second workshop is available as a
 
 ## Workshop 3
 
-The theme for the [third workshop](ws3) was the somewhat broad **Doing reasearch with data**, to encompass the breadth of processing data in a research. 
+The theme for the [third workshop](ws3) was the somewhat broad **Doing research with data**, to encompass the breadth of processing data in a research. 
 
 The presentation from the second workshop is available as a
 [PDF](ws3/ws3-slides.pdf).
@@ -46,14 +46,16 @@ The presentation from the second workshop is available as a
 # Outcome
 
 The outcome from each workshop was the collection of stakeholders,
-drivers, goals and requirements indentified as having some significant
-role in relation to research data management during the phas that was
+drivers, goals and requirements identified as having some significant
+role in relation to research data management during the phase that was
 the theme of the workshop. The raw outcome of each workshop can be
 found in its subfolder.
 
 # The common ground
 
-The outcomes from the workshops where later merged to become the **initial findengs views** that would be the startingpoint for the [common ground model](../common].
+The outcomes from the workshops where later merged to become the
+**initial findings views** that formed the starting point for the
+[common ground model](../common).
 
 # Licence 
 
